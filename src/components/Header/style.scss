@@ -1,0 +1,82 @@
+.gradiented-wrapp .main-header{
+	display: flex;
+	min-height: 50px;
+	justify-content: space-between;
+	align-items: center;
+
+	.logo{
+		display: inline-block;
+
+		img{
+			width: auto;
+			height: 40px;
+		}
+	}
+
+	a{
+		vertical-align: middle;
+		transition: all 300ms;
+		color: #fff;
+		font-size: 16px;
+		line-height: 22px;
+		padding: 0 14px;
+
+		&:hover{
+			background-color: rgba(255,255,255,0.2);
+		}
+	}
+}
+
+.menu-right{
+	display: flex;
+	align-items: center;
+}
+
+.lang-switch {
+	padding-left: 40px;
+
+	.v-input{
+		width: 60px;
+		padding-top: 0;
+    	margin-top: 0;
+	}
+
+	.v-input__slot{
+		margin-bottom: 0;
+
+		&:before, &:after{
+			display: none;
+		}
+
+		.v-input__append-inner{
+			padding-left: 0!important;
+		}
+
+		.v-select__selection, .v-input__icon i{
+			color: #fff!important;
+		}
+	}
+
+	.v-text-field__details{
+		display: none;
+	}
+}
+
+.v-menu__content{
+	min-width: 200px!important;
+	text-align: center;
+	z-index: 400!important;
+}
+
+@media(max-width: 1280px){
+	.gradiented-wrapp .main-header a{
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 960px){
+	.lang-switch {
+		padding-left: 0;
+		padding-right: 10px;
+	}
+}
