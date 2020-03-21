@@ -7,16 +7,16 @@
                         <img src="@/assets/img/logo.png" alt="logo">
                     </a>
 
-                    <a href="#" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link1')}}</a>
-                    <a href="#" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link2')}}</a>
-                    <a href="#" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link3')}}</a>
-                    <a href="#" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link4')}}</a>
+                    <router-link class="d-none d-md-inline d-lg-inline" to="/#monitoring">{{translate('common', 'headerAndFooter', 'link1')}}</router-link>
+                    <router-link class="d-none d-md-inline d-lg-inline" to="/#eligibility">{{translate('common', 'headerAndFooter', 'link2')}}</router-link>
+                    <router-link class="d-none d-md-inline d-lg-inline" to="/#offer">{{translate('common', 'headerAndFooter', 'link3')}}</router-link>
+                    <router-link class="d-none d-md-inline d-lg-inline" to="/#partnership">{{translate('common', 'headerAndFooter', 'link4')}}</router-link>
                 </nav>
 
                 <div class="menu-right">
                     <nav class="d-none d-md-flex d-lg-flex">
-                        <a href="#" @click="goTo('/about')">{{translate('common', 'headerAndFooter', 'link5')}}</a>
-                        <a href="#" @click="goTo('/contact')">{{translate('common', 'headerAndFooter', 'link6')}}</a>
+                        <router-link to="/about">{{translate('common', 'headerAndFooter', 'link5')}}</router-link>
+                        <router-link to="/contact">{{translate('common', 'headerAndFooter', 'link6')}}</router-link>
                     </nav>
 
                     <div class="lang-switch">
@@ -33,32 +33,32 @@
                         <v-list>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <a href="#">{{translate('common', 'headerAndFooter', 'link1')}}</a>
+                                    <router-link to="/#monitoring">{{translate('common', 'headerAndFooter', 'link1')}}</router-link>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <a href="#">{{translate('common', 'headerAndFooter', 'link2')}}</a>
+                                    <router-link to="/#eligibility">{{translate('common', 'headerAndFooter', 'link2')}}</router-link>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                <a href="#">{{translate('common', 'headerAndFooter', 'link3')}}</a>
+                                    <router-link to="/#offer">{{translate('common', 'headerAndFooter', 'link3')}}</router-link>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <a href="#">{{translate('common', 'headerAndFooter', 'link4')}}</a>
+                                    <router-link to="/#partnership">{{translate('common', 'headerAndFooter', 'link4')}}</router-link>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <a href="#" @click="goTo('/about')">{{translate('common', 'headerAndFooter', 'link5')}}</a>
+                                    <router-link to="/about">{{translate('common', 'headerAndFooter', 'link5')}}</router-link>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <a href="#" @click="goTo('/contact')">{{translate('common', 'headerAndFooter', 'link6')}}</a>
+                                    <router-link to="/contact">{{translate('common', 'headerAndFooter', 'link6')}}</router-link>
                                 </v-list-item-title>
                             </v-list-item>
                         </v-list>
@@ -78,7 +78,8 @@
         mixins: [translate],
 
         components: {},
-        
+        props: [ 'langChanged' ],
+
         data() {
             return {
                 langItems: ["Eng", "Fr"],
@@ -87,7 +88,7 @@
         },
 
         created(){
-            this.selectedLang = localStorage.lang;
+            this.selectedLang = localStorage.lang || "Eng";
         },
 
         methods: {
@@ -97,6 +98,7 @@
 
             changeLang(){
                 localStorage.lang = this.selectedLang;
+                this.$parent.langChanged()
             }
         }
     };

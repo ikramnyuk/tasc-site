@@ -32,9 +32,21 @@ const routes = [
     }
 ];
 
+const scrollBehavior = (to, from, savedPosition) => {
+    if (to.hash) {
+        return {
+            selector: to.hash
+            // , offset: { x: 0, y: 10 }
+        }
+    }
+    
+    console.log(from, savedPosition);
+}
+
 const Router = new VueRouter({
     mode: 'history',
     routes,
+    scrollBehavior
 });
 
 export default Router;

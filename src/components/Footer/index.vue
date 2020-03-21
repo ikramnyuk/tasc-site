@@ -13,12 +13,12 @@
                         <h3>{{translate('common', 'headerAndFooter', 'footerLabel1')}}</h3>
 
                         <ul>
-                            <li>{{translate('common', 'headerAndFooter', 'link1')}}</li>
-                            <li>{{translate('common', 'headerAndFooter', 'link2')}}</li>
-                            <li>{{translate('common', 'headerAndFooter', 'link3')}}</li>
-                            <li>{{translate('common', 'headerAndFooter', 'link4')}}</li>
-                            <li @click="goTo('/about')"><a href="#">{{translate('common', 'headerAndFooter', 'link5')}}</a></li>
-                            <li @click="goTo('/contact')"><a href="#">{{translate('common', 'headerAndFooter', 'link6')}}</a></li>
+                            <li><router-link class="d-none d-md-inline d-lg-inline" to="/#monitoring">{{translate('common', 'headerAndFooter', 'link1')}}</router-link></li>
+                            <li><router-link class="d-none d-md-inline d-lg-inline" to="/#eligibility">{{translate('common', 'headerAndFooter', 'link2')}}</router-link></li>
+                            <li><router-link class="d-none d-md-inline d-lg-inline" to="/#offer">{{translate('common', 'headerAndFooter', 'link3')}}</router-link></li>
+                            <li><router-link class="d-none d-md-inline d-lg-inline" to="/#partnership">{{translate('common', 'headerAndFooter', 'link4')}}</router-link></li>
+                            <li><router-link to="/about">{{translate('common', 'headerAndFooter', 'link5')}}</router-link></li>
+                            <li><router-link to="/contact">{{translate('common', 'headerAndFooter', 'link6')}}</router-link></li>
                         </ul>
                     </div>
                     <div class="custom-col">

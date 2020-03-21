@@ -2,7 +2,7 @@
     <div>
         <Header/>
         
-        <router-view></router-view>
+        <router-view :key="switchIndex"></router-view>
 
         <Footer/>
     </div>
@@ -20,9 +20,15 @@
         components: {Header, Footer},
 
         data() {
-            return {};
+            return {
+                switchIndex: 0
+            };
         },
 
-        methods: {}
+        methods: {
+            langChanged(){
+                this.switchIndex++;
+            }
+        }
     };
 </script>
