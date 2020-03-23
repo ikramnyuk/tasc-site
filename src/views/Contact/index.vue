@@ -75,7 +75,7 @@
             return {
                 center: latLng(50.830593, 4.404381),
                 zoom: 16,
-                url: 'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png',
+                url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
                 icon: icon({
                     iconUrl: iconUrl,
