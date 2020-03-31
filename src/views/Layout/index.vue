@@ -1,10 +1,10 @@
 <template>
     <div>
-        <Header/>
+        <Header :key="switchIndex+2"/>
         
         <router-view :key="switchIndex"></router-view>
 
-        <Footer/>
+        <Footer :key="switchIndex+1"/>
     </div>
 </template>
 

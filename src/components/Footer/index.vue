@@ -13,12 +13,13 @@
                         <h3>{{translate('common', 'headerAndFooter', 'footerLabel1')}}</h3>
 
                         <ul>
-                            <li><router-link class="d-none d-md-inline d-lg-inline" to="/#monitoring">{{translate('common', 'headerAndFooter', 'link1')}}</router-link></li>
-                            <li><router-link class="d-none d-md-inline d-lg-inline" to="/#eligibility">{{translate('common', 'headerAndFooter', 'link2')}}</router-link></li>
-                            <li><router-link class="d-none d-md-inline d-lg-inline" to="/#offer">{{translate('common', 'headerAndFooter', 'link3')}}</router-link></li>
-                            <li><router-link class="d-none d-md-inline d-lg-inline" to="/#partnership">{{translate('common', 'headerAndFooter', 'link4')}}</router-link></li>
-                            <li><router-link to="/about">{{translate('common', 'headerAndFooter', 'link5')}}</router-link></li>
-                            <li><router-link to="/contact">{{translate('common', 'headerAndFooter', 'link6')}}</router-link></li>
+                            <li><a href="#monitoring" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}">{{translate('common', 'headerAndFooter', 'link1')}}</a></li>
+                            <li><a href="#eligibility" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}">{{translate('common', 'headerAndFooter', 'link2')}}</a></li>
+                            <li><a href="#offer" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}">{{translate('common', 'headerAndFooter', 'link3')}}</a></li>
+                            <li><a href="#partnership" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}">{{translate('common', 'headerAndFooter', 'link4')}}</a></li>
+                            <li><a href="#about" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}">{{translate('common', 'headerAndFooter', 'link5')}}</a></li>
+                            <li><a href="#contact" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}">{{translate('common', 'headerAndFooter', 'link6')}}</a></li>
+                            <li><router-link to="/privacy">{{translate('common', 'headerAndFooter', 'privacy')}}</router-link></li>
                         </ul>
                     </div>
                     <div class="custom-col">

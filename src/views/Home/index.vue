@@ -1,5 +1,5 @@
 <template>
-    <main class="main-wrapper">
+    <main class="main-wrapper" id="top-point">
         <section class="section-1">
             <div class="intro intro-mb">
                 <img class="logo" src="@/assets/img/logo.png" alt="logo">
@@ -60,9 +60,9 @@
                 <h3 class="section-title">{{translate('home', 'section3', 'label')}}</h3>
 
                 <div class="description">
-                    <p>{{translate('home', 'section3', 'list1label')}}</p>
-                    <a href="tender-it.com"> {{translate('home', 'section3', 'link1')}}</a>
-                    <p class="link-description">{{translate('home', 'section3', 'list2Label')}}</p>
+                    <p class="bold">{{translate('home', 'section3', 'list1label')}}</p>
+                    <!-- <a href="tender-it.com"> {{translate('home', 'section3', 'link1')}}</a> -->
+                    <!-- <p class="link-description">{{translate('home', 'section3', 'list2Label')}}</p> -->
                 </div>
                 
                 <div class="section-3-content">
@@ -79,9 +79,11 @@
                             </ul>
                         </div>
 
-                        <p class="description">{{translate('home', 'section3', 'list2Sublabel')}}</p>
+                        <p class="description bold">{{translate('home', 'section3', 'list2Sublabel')}}</p>
+                        <p class="description bold pt-0 pb-20">{{translate('home', 'section3', 'list2Sublabel2')}}</p>
 
                         <div class="list-wrapper">
+                            <div class="list-title">{{translate('home', 'section4', 'listLabel')}}</div>
                             <ul>
                                 <li>{{translate('home', 'section3', 'list2_1')}}</li>
                                 <li>{{translate('home', 'section3', 'list2_2')}}</li>
@@ -93,7 +95,7 @@
                     <div class="right">
                         <div class="img-wrap">
                             <div class="img-overlay">
-                                <img src="@/assets/img/search.jpg" alt="tender process">
+                                <img src="@/assets/img/search.png" alt="tender process">
                             </div>
                         </div>
 
@@ -186,24 +188,230 @@
                     </div>
                 </div>
             </div>
+        
+        
         </section>
+
+        <!-- About -->
+
+        <!-- <section class="section-1">
+            <div class="intro">
+                <h1>{{translate('about', 'section1', 'label')}}</h1>
+            </div>
+        </section> -->
+
+        <section class="main-section bg-section" id="about">
+            <div class="custom-container">
+                <h3 class="section-title centered">{{translate('about', 'section2', 'label')}}</h3>
+
+                <div class="cases">
+                    <div class="case">
+                        <div class="case-icon"><v-icon>fa-lock</v-icon></div>
+                        <p>{{translate('about', 'section2', 'case1')}}</p>
+                    </div>
+                    <div class="case">
+                        <div class="case-icon"><v-icon>fa-tasks</v-icon></div>
+                        <p>{{translate('about', 'section2', 'case2')}}</p>
+                    </div>
+                    <div class="case">
+                        <div class="case-icon"><v-icon>fa-search</v-icon></div>
+                        <p>{{translate('about', 'section2', 'case3')}}</p>
+                    </div>
+                    <div class="case">
+                        <div class="case-icon"><v-icon>fa-handshake</v-icon></div>
+                        <p>{{translate('about', 'section2', 'case4')}}</p>
+                    </div>
+                    <div class="case">
+                        <div class="case-icon"><v-icon>fa-trophy</v-icon></div>
+                        <p>{{translate('about', 'section2', 'case5')}} <br/>{{translate('about', 'section2', 'case5Sub')}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <div class="custom-container">
+                <h3 class="section-title centered">{{translate('about', 'section3', 'label')}}</h3>
+
+                <div class="list-wrapper">
+                    <ul class="strategy">
+                        <li><span>{{translate('about', 'section3', 'case1')}}</span></li>
+                        <li><span>{{translate('about', 'section3', 'case2')}}</span></li>
+                        <li><span>{{translate('about', 'section3', 'case4')}}</span></li>
+                        <li><span>{{translate('about', 'section3', 'case5')}}</span></li>
+                        <li><span>{{translate('about', 'section3', 'case3')}}</span></li>
+                        <li><span>{{translate('about', 'section3', 'case6')}}</span></li>
+                        <li><span>{{translate('about', 'section3', 'case7')}}</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section bg-section">
+            <div class="custom-container">
+                <h3 class="section-title centered">{{translate('about', 'section4', 'label')}}</h3>
+
+                <carousel class="testimonials" :perPageCustom="[[320, 1], [1024, 2]]">
+                    <slide>
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case1')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case1Sub')}}</div>
+                        </div>
+                    </slide>
+                    <slide>
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case2')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case2Sub')}}</div>
+                        </div>
+                    </slide>
+                    <slide>
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case3')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case3Sub')}}</div>
+                        </div>
+                    </slide>
+                    <slide>
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case4')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case4Sub')}}</div>
+                        </div>
+                    </slide>
+                    <slide>
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case5')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case5Sub')}}</div>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+        </section>
+
+        <!-- Contact -->
+
+        <div class="map-wrapp" id="contact">
+            <LMap :zoom="zoom" :center="center" class="map">
+                <LTileLayer :url="url" :attribution="attribution"/>
+                <LMarker :lat-lng="center" :icon="icon"></LMarker>
+            </LMap>
+        </div>
+
+        <div class="main-section bg-section contact-wrapp">
+            <div class="contact-container">
+                <h3 class="section-title">{{translate('contact', 'section1', 'label')}}</h3>
+
+                <div class="contact-form">
+                    <form>
+                        <v-text-field v-model="firstName" :label="translate('contact', 'section1', 'form1')"></v-text-field>
+                        <v-text-field v-model="lastName" :label="translate('contact', 'section1', 'form2')"></v-text-field>
+                        <v-text-field v-model="email" :label="translate('contact', 'section1', 'form3')"></v-text-field>
+                        <v-select v-model="topic" :items="topicItems" :label="translate('contact', 'section1', 'form4')"></v-select>
+                        <v-textarea v-model="message" :label="translate('contact', 'section1', 'form5')"></v-textarea>
+                        <v-btn color="#0190e3" @click="submitForm()">{{translate('contact', 'section1', 'formBtn')}}</v-btn>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <div class="call-block">
+                            <div class="header">
+                                {{translate('contact', 'section1', 'contactLabel')}} <a href="tel:+32 (0)496 127 327">+32(0)2 512 53 03</a>
+                            </div>
+                            
+                            <div class="text">
+                                {{translate('contact', 'section1', 'contactSubLabel')}}
+                            </div>
+                        </div>
+
+                        <div class="contact-block">
+                            <div class="header">
+                                {{translate('contact', 'section1', 'addressLabel')}}
+                            </div>
+                            <div class="label">{{translate('contact', 'section1', 'addresssublabel')}}</div>
+                            <div class="contac-info">
+                                {{translate('contact', 'section1', 'adress1')}} <br/>
+                                {{translate('contact', 'section1', 'adress2')}} <br/>
+                                {{translate('contact', 'section1', 'adress3')}} <br/>
+                                {{translate('contact', 'section1', 'adress4')}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <v-snackbar :timeout="5000" color="success" top bottom v-model="snackbar">{{translate('common', 'headerAndFooter', 'success')}}</v-snackbar>
     </main>
 </template>
 
 <script>
-    import './style.scss';
+    import { Carousel, Slide } from 'vue-carousel';
+
+    import { latLng, icon } from "leaflet";
+    import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
+    import 'leaflet/dist/leaflet.css';
+    import iconUrl from "../../assets/img/marker.svg";
+
+    import { sendEmail } from "../../api/common";
+
+    import './main.scss';
+    import './about.scss';
+    import './contact.scss';
     import translate from "../../lang/translate";
 
     export default {
         name: "Home",
         mixins: [translate],
 
-        components: {},
+        components: {Carousel, Slide, LMap, LTileLayer, LMarker},
         
         data() {
-            return {};
+            return {
+                center: latLng(50.830593, 4.404381),
+                zoom: 16,
+                url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+                icon: icon({
+                    iconUrl: iconUrl,
+                    iconSize: [45, 45],
+                    iconAnchor: [16, 37]
+                }),
+                topicItems: ["Monitoring", "Eligibility", "Offer Building", "Tender Partnership"],
+                firstName: "",
+                lastName: "",
+                email: "",
+                topic: "",
+                message: "",
+                snackbar: false
+            };
         },
 
-        methods: {}
+        methods: {
+            submitForm(){
+                let data = {
+                    firstName: this.firstName,
+                    lastName: this.lastName,
+                    email: this.email,
+                    topic: this.topic,
+                    message: this.message
+                }
+
+                return new Promise((resolve, reject) => {
+                    sendEmail(data).then((response) => {
+                        this.snackbar = true;
+
+                        this.snackbar = true;
+                        this.firstName = "";
+                        this.lastName = "";
+                        this.email = "";
+                        this.topic = "";
+                        this.message = "";
+
+                        console.log(response);
+                    }).catch(error => {
+                        console.log(error);
+
+                        reject(error);
+                    });
+                });
+            }
+        }
     };
 </script>

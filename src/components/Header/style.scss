@@ -1,3 +1,37 @@
+.fixed-header{
+	position: fixed;
+	width: 100%;
+	z-index: 10000;
+}
+
+.v-menu__content--fixed.v-menu__content{
+	z-index: 100000!important;
+}
+
+.to-top{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 100px;
+	right: 50px;
+	background-color: #0592dd;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+
+	i{
+		position: absolute;
+		top: 11px;
+		left: 13px;
+		color: #fff;
+	}
+
+	@media(max-width: 768px){
+		right: 10px;
+	}
+}
+
 .gradiented-wrapp .main-header{
 	display: flex;
 	min-height: 50px;
@@ -36,9 +70,13 @@
 	padding-left: 40px;
 
 	.v-input{
-		width: 60px;
+		width: 115px;
 		padding-top: 0;
-    	margin-top: 0;
+		margin-top: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		border: 1px solid #fff;
+		border-radius: 5px;
 	}
 
 	.v-input__slot{
@@ -54,6 +92,10 @@
 
 		.v-select__selection, .v-input__icon i{
 			color: #fff!important;
+		}
+
+		.v-select__selection{
+			font-weight: 500;
 		}
 	}
 

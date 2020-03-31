@@ -3,15 +3,15 @@ const fr = {
         section1: {
             label: "End-to-end services in the tendering process",
             intro: "TASC a été fondée en 2004 par des spécialistes des institutions publiques et gestionnaires de projets institutionnels . les bureaux de TASC sont situés à quelques minutes des Institutions européennes.",
-            subIntro: "TASC delivers its services throughout all of Europe"
+            subIntro: "TASC fournit ses services à travers toute l’Europe"
         },
 
         section2: {
-            label: "The end-to-end services in the tendering process",
-            preCase1: "1.Veille sur les marchés publics",
-            preCase2: "2.Analyse de l’Eligibilité des entités soumissionnaires",
-            preCase3: "3.Recherche et montage de partenariats",
-            preCase4: "4.Montage des offres",
+            label: "Nos services de A à Z pour l’obtention de marchés publics",
+            preCase1: "Veille sur les marchés publics",
+            preCase2: "Analyse de l’Eligibilité des entités soumissionnaires",
+            preCase3: "Recherche et montage de partenariats",
+            preCase4: "Montage des offres",
             case1: "Nous trouvons des",
             case1Bold: "offres appropriées pour vous",
             case2: "Nous évaluons votre",
@@ -24,16 +24,17 @@ const fr = {
 
         section3: {
             label: "Veille",
-            list1label: "sur les marchés publics (partenariat avec Tender-IT)",
+            list1label: "Trouver des marchés publics n’a jamais été aussi facile grâce à notre service Tender-it.com",
             link1: "Tender-It.com",
-            list1_1: "Trouver des offres rapidement et facilement",
+            list1_1: "Sur smartphone ou ordinateur",
             list1_2: "Pour les opportunités locales, nationales et internationales",
             list1_3: "Avec des profils de recherche illimités",
             list1_4: "À un abonnement flexible et bas gratuit",
             list1_5: "Suivez vos offres préférées sur un tableau de bord personnel",
             list1_6: "Soyez informé par mail des nouveaux appels d'offres et des délais",
             list2Label: "Nous assurons la veille en Belgique, France et Luxembourg ",
-            list2Sublabel: "en collaboration avec notre partenaire Tender-IT",
+            list2Sublabel: "Tender-it est une plateforme de veille internationale sur les marchés publics",
+            list2Sublabel2: "TASC est le partenaire exclusif pour le Belgique, la France et le Luxembourg",
             list2_1: "Nous identifions avec nos clients les éléments-clés de leur veille",
             list2_2: "Nous trouvons pour nos clients les marchés publics qui leur correspondent",
             list2_3: "Nous élargissons signicativement l’horizon des marchés de nos clients",
@@ -43,7 +44,7 @@ const fr = {
         section4: {
             label: "Eligibilité",
             subLabel: "Nous conseillons sur l’adéquation de nos clients aux marchés sélectionnés",
-            listLabel: "TASC actions",
+            listLabel: "Nos services",
             list_1: "Lecture complète des documents du cahier des charges",
             list_2: "Sélection des informations-clés",
             list_3: "Analyse comparative des critères de sélection du cahier des charges et des paramètres de nos clients",
@@ -53,7 +54,7 @@ const fr = {
         section5: {
             label: "Rédaction du dossier d’offre",
             subLabel: "De l’analyse du cahier des charges à la soumission de l’offre.",
-            listLabel: "TASC actions",
+            listLabel: "Nos services",
             list_1: "Analyse des documents du cahier des charges",
             list_2: "Elaboration de la structure du dossier d’offre",
             list_3: "Sélection des documents administratifs",
@@ -70,10 +71,10 @@ const fr = {
         section6: {
             label: "Partenariats",
             subLabel: "Nous assurons un double rôle, à la fois celui d’un architecte assemblant des entités, et celui d’un arbitre indépendant définissant les droits, obligations et responsabilités de chaque partenaire.",
-            listLabel: "TASC actions",
+            listLabel: "Nos services",
             list_1: "Nous rédigeons les accords et autres documents partenariaux-clés",
-            list_2: "Nous identifions le partenaire le plus pertinent pour un Consortium fort",
-            list_3: "Nous définissons les rôles et les responsabilités des Parties",
+            list_2: "Nous identifions le partenaire le plus pertinent pour un consortium fort",
+            list_3: "Nous définissons les rôles et les responsabilités des parties",
             list_4: "Nous bâtissons votre réseaux d’entités de même type (ou non) afin de couvrir un plus large territoire",
         }
     },
@@ -143,7 +144,8 @@ const fr = {
             link6: "Contact",
             footerLabel1: "Prestations de service",
             footerLabel2: "Sociale",
-            success: "Votre message a bien été envoyé. Je vous remercie!"
+            success: "Votre message a bien été envoyé. Je vous remercie!",
+            privacy: 'Politique de confidentialité'
         }
     }
 }

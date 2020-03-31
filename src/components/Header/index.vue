@@ -1,26 +1,27 @@
 <template>
-    <div class="gradiented-wrapp">
+    <div class="gradiented-wrapp fixed-header">
         <div class="custom-container">
             <header class="main-header container">
                 <nav class="main-menu">
-                    <a href="#" class="logo" @click="goTo('/')">
+                   <router-link to="/" class="logo">
                         <img src="@/assets/img/logo.png" alt="logo">
-                    </a>
-
-                    <router-link class="d-none d-md-inline d-lg-inline" to="/#monitoring">{{translate('common', 'headerAndFooter', 'link1')}}</router-link>
-                    <router-link class="d-none d-md-inline d-lg-inline" to="/#eligibility">{{translate('common', 'headerAndFooter', 'link2')}}</router-link>
-                    <router-link class="d-none d-md-inline d-lg-inline" to="/#offer">{{translate('common', 'headerAndFooter', 'link3')}}</router-link>
-                    <router-link class="d-none d-md-inline d-lg-inline" to="/#partnership">{{translate('common', 'headerAndFooter', 'link4')}}</router-link>
+                    </router-link>
+                    <a href="#monitoring" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link1')}}</a>
+                    <a href="#eligibility" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link2')}}</a>
+                    <a href="#offer" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link3')}}</a>
+                    <a href="#partnership" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link4')}}</a>
+                    <a href="#about" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link5')}}</a>
+                    <a href="#contact" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link6')}}</a>
                 </nav>
 
                 <div class="menu-right">
-                    <nav class="d-none d-md-flex d-lg-flex">
+                    <!-- <nav class="d-none d-md-flex d-lg-flex">
                         <router-link to="/about">{{translate('common', 'headerAndFooter', 'link5')}}</router-link>
                         <router-link to="/contact">{{translate('common', 'headerAndFooter', 'link6')}}</router-link>
-                    </nav>
+                    </nav> -->
 
                     <div class="lang-switch">
-                        <v-select :items="langItems" v-model="selectedLang" @change="changeLang()" label=""></v-select>
+                        <v-select :items="langItems" item-text="label" item-value="value" v-model="selectedLang" @change="changeLang()" label=""></v-select>
                     </div>
 
                     <v-menu bottom origin="center center" transition="scale-transition" class="mobile-menu">
@@ -33,32 +34,32 @@
                         <v-list>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <router-link to="/#monitoring">{{translate('common', 'headerAndFooter', 'link1')}}</router-link>
+                                    <a v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#monitoring">{{translate('common', 'headerAndFooter', 'link1')}}</a>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <router-link to="/#eligibility">{{translate('common', 'headerAndFooter', 'link2')}}</router-link>
+                                    <a v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#eligibility">{{translate('common', 'headerAndFooter', 'link2')}}</a>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <router-link to="/#offer">{{translate('common', 'headerAndFooter', 'link3')}}</router-link>
+                                    <a v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#offer">{{translate('common', 'headerAndFooter', 'link3')}}</a>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <router-link to="/#partnership">{{translate('common', 'headerAndFooter', 'link4')}}</router-link>
+                                    <a v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#partnership">{{translate('common', 'headerAndFooter', 'link4')}}</a>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <router-link to="/about">{{translate('common', 'headerAndFooter', 'link5')}}</router-link>
+                                    <a v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#about">{{translate('common', 'headerAndFooter', 'link5')}}</a>
                                 </v-list-item-title>
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <router-link to="/contact">{{translate('common', 'headerAndFooter', 'link6')}}</router-link>
+                                    <a v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#contact">{{translate('common', 'headerAndFooter', 'link6')}}</a>
                                 </v-list-item-title>
                             </v-list-item>
                         </v-list>
@@ -66,6 +67,10 @@
                 </div>
             </header>
         </div>
+
+        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#top-point" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
     </div>
 </template>
 
@@ -82,13 +87,26 @@
 
         data() {
             return {
-                langItems: ["Eng", "Fr"],
-                selectedLang: "Eng"
+                langItems: [{label: 'English', value: 'Eng'}, {label: 'Français', value: 'Fr'}],
+                selectedLang: "Eng",
+                scrolled: false
             };
         },
 
         created(){
             this.selectedLang = localStorage.lang || "Eng";
+
+            let self = this;
+
+            window.addEventListener("scroll", function() {
+                var top = this.scrollY;
+
+                if(top >= 400){
+                    self.scrolled = true;
+                }else{
+                    self.scrolled = false;
+                }
+            }, false);
         },
 
         methods: {

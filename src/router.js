@@ -4,8 +4,7 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import Home from './views/Home/index';
-import About from './views/About/index';
-import Contact from './views/Contact/index';
+import Privacy from './views/Privacy/index';
 import Layout from './views/Layout/index';
 
 const routes = [
@@ -17,35 +16,21 @@ const routes = [
                 path: '/',
                 component: Home,
                 name: 'Home'
-            },
-            {
-                path: '/about',
-                component: About,
-                name: 'About'
-            },
-            {
-                path: '/contact',
-                component: Contact,
-                name: 'Contact'
             }
         ]
+    },
+    {
+        path: '/privacy',
+        component: Privacy,
+        name: 'Privacy'
     }
 ];
 
-const scrollBehavior = (to, from, savedPosition) => {
-    if (to.hash) {
-        return {
-            selector: to.hash
-            // , offset: { x: 0, y: 10 }
-        }
-    }
-    
-    console.log(from, savedPosition);
-}
-
 const Router = new VueRouter({
     routes,
-    scrollBehavior
+    scrollBehavior() {
+        return { x: 0, y: 0 };
+    },
 });
 
 export default Router;

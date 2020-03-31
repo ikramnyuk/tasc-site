@@ -13,41 +13,42 @@ const eng = {
             preCase3: "Offer Building",
             preCase4: "Tender Partnership",
             case1: "We find",
-            case1Bold: "Appropriate Tenders for you",
-            case2: "We asses your",
-            case2Bold: "Capability to offer",
+            case1Bold: "appropriate Tenders for you",
+            case2: "We assess your",
+            case2Bold: "capability to offer",
             case3: "We assist you",
-            case3Bold: "To Build the offer",
-            case4: "We select you",
-            case4Bold: "Right partner",
+            case3Bold: "to Build the offer",
+            case4: "We select your",
+            case4Bold: "right partner",
         },
 
         section3: {
             label: "Monitoring",
-            list1label: "Finding tenders has never been so easy with our on-line service",
+            list1label: "Finding tenders has never been so easy with our on-line service Tender-it.com",
             link1: "Tender-It.com",
-            list1_1: "Find tenders in a fast an easy way",
+            list1_1: "On smartphones or computers",
             list1_2: "For local, national & international opportunities",
             list1_3: "With unlimited search profiles",
             list1_4: "At a flexible and low subscription free",
             list1_5: "Follow your preferred tenders on a personal dashboard",
             list1_6: "Get notified by mail on new tenders and deadlines",
             list2Label: "Tender-It is an International public procurement platform.",
-            list2Sublabel: "TASC is the exclusive partner for entities in Belgium, France and Luxembourg",
-            list2_1: "Support and help belgian, French and Luxembourger customers",
+            list2Sublabel: "Tender-it is an international public procurement platform",
+            list2Sublabel2: "TASC is Tender-IT exclusive partner for entities in Belgium, France and Luxembourg",
+            list2_1: "Support and help Belgian, French and Luxembourger customers",
             list2_2: "Building their search profile",
             list2_3: "Offer complementary tender services",
-            link2: "enter our monitoring service"
+            link2: "Enter our monitoring service and get a free trial"
         },
 
         section4: {
             label: "Eligibility",
             subLabel: "We advise on your feasibility and your opportunity to answer the tender",
             listLabel: "TASC actions",
-            list_1: "Read the complete Call for Tenders documents",
+            list_1: "Read the complete call for tenders documents",
             list_2: "Select the key information",
             list_3: "Analyse the selection criteria against your company profile and capacity",
-            list_4: "Gap analysis and recommandation on the tendering strategy",
+            list_4: "Provide the gap analysis and recommandation on the tendering strategy",
         },
 
         section5: {
@@ -56,7 +57,7 @@ const eng = {
             listLabel: "TASC actions",
             list_1: "Analyse calls for tenders’ documents",
             list_2: "Structure tenders’ response documents",
-            list_3: "List of required administrative documents",
+            list_3: "List the requested administrative documents",
             list_4: "Create bid planning",
             list_5: "Identify the desired requirements",
             list_6: "Identify the key tender success factors",
@@ -71,8 +72,8 @@ const eng = {
             label: "Partnership",
             subLabel: "You may need complementary resources for specific tenders. We act as both an architect enabling partnerships to come together, and as an independent referee defining the rights, obligations, responsibilities and accountability of each partner.",
             listLabel: "TASC actions",
-            list_1: "Identify the right partner(s) for a perfect Consortium",
-            list_2: "Build network of similar (or not) identities to cover larger territory",
+            list_1: "Identify the right partner(s) for a perfect consortium",
+            list_2: "Build network of similar (or not) entities to cover larger territory",
             list_3: "Define roles and responsibilities of all parties involved.",
             list_4: "We draw up the key documents/agreements",
         }
@@ -143,7 +144,8 @@ const eng = {
             link6: "Contact",
             footerLabel1: "Services",
             footerLabel2: "Social",
-            success: "Your message sent successfuly. Thank you!"
+            success: "Your message sent successfuly. Thank you!",
+            privacy: 'Privacy policy'
         }
     }
 }
