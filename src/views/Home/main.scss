@@ -186,13 +186,14 @@
                 }
 
                 &:nth-child(2){
+                    z-index: 5;
+
                     .step-content{
                         left: 30%;
                         animation-name: buble;
                         animation-delay: 0.3s;
                         animation-duration: 1s;
                         animation-fill-mode: forwards;
-                        z-index: 5;
 
                         &:before{
                             border-left: 20px solid transparent;
@@ -203,13 +204,14 @@
                 }
 
                 &:nth-child(3){
+                    z-index: 4;
+
                     .step-content{
                         left: 50%;
                         animation-name: buble;
                         animation-delay: 0.8s;
                         animation-duration: 1s;
                         animation-fill-mode: forwards;
-                        z-index: 4;
 
                         &:before{
                             border-left: 20px solid transparent;
@@ -220,13 +222,14 @@
                 }
 
                 &:nth-child(4){
+                    z-index: 3;
+
                     .step-content{
                         left: 70%;
                         animation-name: buble;
                         animation-delay: 1.3s;
                         animation-duration: 1s;
                         animation-fill-mode: forwards;
-                        z-index: 3;
 
                         &:before{
                             border-left: 14px solid transparent;
@@ -237,13 +240,14 @@
                 }
 
                 &:nth-child(5){
+                    z-index: 2;
+                    
                     .step-content{
                         left: 90%;
                         animation-name: buble;
                         animation-delay: 1.8s;
                         animation-duration: 1s;
                         animation-fill-mode: forwards;
-                        z-index: 2;
 
                         &:before{
                             border-left: 7px solid transparent;

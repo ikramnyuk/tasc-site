@@ -64,8 +64,6 @@ ul li{
 }
 
 .more{
-	width: 100%;
-	max-width: 335px;
 	display: inline-block;
 	margin-top: 20px;
 	padding: 8px 12px;
@@ -144,9 +142,12 @@ ul li{
 	}
 
 	.more{
-        display: block;
-        margin: 20px auto 0;
-    }
+        display: inline-block;
+	}
+	
+	.more-wrap{
+		text-align: center;
+	}
 }
 
 .v-application ol, .v-application ul{

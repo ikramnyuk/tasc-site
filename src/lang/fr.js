@@ -38,7 +38,7 @@ const fr = {
             list2_1: "Nous identifions avec nos clients les éléments-clés de leur veille",
             list2_2: "Nous trouvons pour nos clients les marchés publics qui leur correspondent",
             list2_3: "Nous élargissons signicativement l’horizon des marchés de nos clients",
-            link2: "service de surveillance"
+            link2: "Entrez dans notre service de surveillance et obtenez un essai gratuit"
         },
 
         section4: {
