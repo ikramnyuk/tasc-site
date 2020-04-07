@@ -1,6 +1,6 @@
 <template>
     <main class="main-wrapper" id="top-point">
-        <section class="section-1">
+        <section class="section-1" id="intro">
             <div class="intro intro-mb">
                 <img class="logo" src="@/assets/img/logo.png" alt="logo">
 
@@ -9,11 +9,11 @@
             </div>
         </section>
 
-        <section class="section-2 custom-container">
+        <section class="section-2 custom-container-lg">
             <h3 class="section-title centered">{{translate('home', 'section2', 'label')}}</h3>
 
             <div class="steps">
-               
+                
                 <div class="steps-wrap">
                     <div class="arrow">
                         
@@ -22,7 +22,7 @@
                     <div class="step">
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase1')}}</span>
-                            <div class="step-content">
+                            <div class="step-content" v-if="casesVisible">
                                 {{translate('home', 'section2', 'case1')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case1Bold')}}</span> 
                             </div>
                         </div>
@@ -30,7 +30,7 @@
                     <div class="step">
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase2')}}</span>
-                            <div class="step-content">
+                            <div class="step-content" v-if="casesVisible">
                                 {{translate('home', 'section2', 'case2')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case2Bold')}}</span> 
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                     <div class="step">
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase3')}}</span>
-                            <div class="step-content">
+                            <div class="step-content" v-if="casesVisible">
                                 {{translate('home', 'section2', 'case3')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case3Bold')}}</span> 
                             </div>
                         </div>
@@ -46,13 +46,15 @@
                     <div class="step">
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase4')}}</span>
-                            <div class="step-content">
+                            <div class="step-content" v-if="casesVisible">
                                 {{translate('home', 'section2', 'case4')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case4Bold')}}</span> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <a href="#" class="download-boock">{{translate('home', 'section2', 'download')}}</a>
         </section>
 
         <section class="main-section section-3 bg-section" id="monitoring"> 
@@ -60,7 +62,10 @@
                 <h3 class="section-title">{{translate('home', 'section3', 'label')}}</h3>
 
                 <div class="description">
-                    <p class="bold">{{translate('home', 'section3', 'list1label')}}</p>
+                    <p class="bold">
+                        <span>{{translate('home', 'section3', 'list1label')}}</span>
+                        <img src="@/assets/img/tender-it-logo.png" class="img-ml-5" alt="">
+                    </p>
                     <!-- <a href="tender-it.com"> {{translate('home', 'section3', 'link1')}}</a> -->
                     <!-- <p class="link-description">{{translate('home', 'section3', 'list2Label')}}</p> -->
                 </div>
@@ -69,6 +74,7 @@
                     <div class="left">
 
                         <div class="list-wrapper">
+                            <div v-if="currentLang === 'Fr'" class="list-title">{{translate('home', 'section4', 'listLabel')}}</div>
                             <ul>
                                 <li>{{translate('home', 'section3', 'list1_1')}}</li>
                                 <li>{{translate('home', 'section3', 'list1_2')}}</li>
@@ -79,8 +85,15 @@
                             </ul>
                         </div>
 
-                        <p class="description bold">{{translate('home', 'section3', 'list2Sublabel')}}</p>
-                        <p class="description bold pt-0 pb-20">{{translate('home', 'section3', 'list2Sublabel2')}}</p>
+                        <p class="description bold">
+                            <img src="@/assets/img/tender-it-logo.png" class="img-mr-5" alt="">
+                            <span>{{translate('home', 'section3', 'list2Sublabel')}}</span>
+                        </p>
+                        <p class="description bold pt-0 pb-20">
+                            <span>{{translate('home', 'section3', 'list2Sublabel2part1')}}</span>
+                            <img src="@/assets/img/tender-it-logo.png" class="img-mx-5" alt="">
+                            <span><span>{{translate('home', 'section3', 'list2Sublabel2part2')}}</span></span>
+                        </p>
 
                         <div class="list-wrapper">
                             <div class="list-title">{{translate('home', 'section4', 'listLabel')}}</div>
@@ -110,7 +123,7 @@
         <section class="main-section shape-toright" id="eligibility">
             <div class="custom-container">
                 <h3 class="section-title">{{translate('home', 'section4', 'label')}}</h3>
-                <p class="description">{{translate('home', 'section4', 'subLabel')}}</p>
+                <p class="description bold">{{translate('home', 'section4', 'subLabel')}}</p>
 
                 <div class="info-box">
                     <div class="img-wrap colorable">
@@ -135,7 +148,7 @@
         <section class="main-section bg-section" id="offer">
             <div class="custom-container">
                 <h3 class="section-title">{{translate('home', 'section5', 'label')}}</h3>
-                <p class="description">{{translate('home', 'section5', 'subLabel')}}</p>
+                <p class="description bold">{{translate('home', 'section5', 'subLabel')}}</p>
                 
                 <div class="info-box">
                     <div class="list-wrapper left">
@@ -152,6 +165,7 @@
                             <li>{{translate('home', 'section5', 'list_9')}}</li>
                             <li>{{translate('home', 'section5', 'list_10')}}</li>
                             <li>{{translate('home', 'section5', 'list_11')}}</li>
+                            <li>{{translate('home', 'section5', 'list_12')}}</li>
                         </ul>
                     </div>
 
@@ -167,7 +181,8 @@
         <section class="main-section shape-toleft" id="partnership">
             <div class="custom-container">
                 <h3 class="section-title">{{translate('home', 'section6', 'label')}}</h3>
-                <p class="description">{{translate('home', 'section6', 'subLabel')}}</p>
+                <p class="description bold">{{translate('home', 'section6', 'subLabel1')}}</p>
+                <p class="description">{{translate('home', 'section6', 'subLabel2')}}</p>
 
                 <div class="info-box">
                     <div class="img-wrap colorable">
@@ -241,7 +256,6 @@
                         <li><span>{{translate('about', 'section3', 'case5')}}</span></li>
                         <li><span>{{translate('about', 'section3', 'case3')}}</span></li>
                         <li><span>{{translate('about', 'section3', 'case6')}}</span></li>
-                        <li><span>{{translate('about', 'section3', 'case7')}}</span></li>
                     </ul>
                 </div>
             </div>
@@ -251,7 +265,7 @@
             <div class="custom-container">
                 <h3 class="section-title centered">{{translate('about', 'section4', 'label')}}</h3>
 
-                <carousel class="testimonials" :perPageCustom="[[320, 1], [1024, 2]]">
+                <carousel class="testimonials" :autoplay="true" :perPageCustom="[[320, 1], [1024, 2]]">
                     <slide>
                         <div class="slide-wrapp">
                             <div class="slide-text">{{translate('about', 'section4', 'case1')}}</div>
@@ -289,7 +303,7 @@
         <!-- Contact -->
 
         <div class="map-wrapp" id="contact">
-            <LMap :zoom="zoom" :center="center" class="map">
+            <LMap :zoom="zoom" :center="center" :options="options" class="map">
                 <LTileLayer :url="url" :attribution="attribution"/>
                 <LMarker :lat-lng="center" :icon="icon"></LMarker>
             </LMap>
@@ -304,7 +318,7 @@
                         <v-text-field v-model="firstName" :label="translate('contact', 'section1', 'form1')"></v-text-field>
                         <v-text-field v-model="lastName" :label="translate('contact', 'section1', 'form2')"></v-text-field>
                         <v-text-field v-model="email" :label="translate('contact', 'section1', 'form3')"></v-text-field>
-                        <v-select v-model="topic" :items="topicItems" :label="translate('contact', 'section1', 'form4')"></v-select>
+                        <v-select v-model="topic" :items="translate('contact', 'section1', 'topics')" :label="translate('contact', 'section1', 'form4')"></v-select>
                         <v-textarea v-model="message" :label="translate('contact', 'section1', 'form5')"></v-textarea>
                         <v-btn color="#0190e3" @click="submitForm()">{{translate('contact', 'section1', 'formBtn')}}</v-btn>
                     </form>
@@ -312,7 +326,7 @@
                     <div class="contact-info">
                         <div class="call-block">
                             <div class="header">
-                                {{translate('contact', 'section1', 'contactLabel')}} <a href="tel:+32 (0)496 127 327">+32(0)2 512 53 03</a>
+                                {{translate('contact', 'section1', 'contactLabel')}} <a href="tel:+32 496 127 327">+32 496 127 327</a>
                             </div>
                             
                             <div class="text">
@@ -373,14 +387,34 @@
                     iconSize: [45, 45],
                     iconAnchor: [16, 37]
                 }),
-                topicItems: ["Monitoring", "Eligibility", "Offer Building", "Tender Partnership"],
                 firstName: "",
                 lastName: "",
                 email: "",
                 topic: "",
                 message: "",
-                snackbar: false
+                snackbar: false,
+                options: {
+                    scrollWheelZoom: false
+                },
+                casesVisible: false,
+                currentLang: 'Eng'
             };
+        },
+
+        beforeMount(){
+            this.currentLang = localStorage.lang;
+            
+            if(window.innerWidth > 1023){
+                window.addEventListener("scroll", () => {
+                    if(window.scrollY >= 500){
+                        this.casesVisible = true;
+                    }
+                });
+
+                if(window.scrollY >= 500){
+                    this.casesVisible = true;
+                }
+            }
         },
 
         methods: {

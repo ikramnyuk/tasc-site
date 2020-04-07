@@ -85,10 +85,27 @@
     section.section-2{
         padding: 25px;
 
+        .download-boock{
+            display: block;
+            height: 100px;
+            max-width: 200px;
+            margin: 20px auto;
+            padding-top: 14px;
+            font-weight: 500;
+            background-color: #f7bf3c;
+            font-size: 16px;
+            border-radius: 30px;
+            -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            color: #000;
+            text-align: center;
+        }
+
         .steps{
             position: relative;
             padding: 65px 0;
-
+            
             .arrow{
                 width: calc(100% - 0px);
                 height: 140px;
@@ -156,7 +173,7 @@
                     top: calc(100% - 5px);
                     text-align: center;
                     padding: 30px 0;
-                    background-color: #c0c0c0;
+                    background-color: #f7bf3c;
                     border-radius: 50%;
                     font-size: 19px;
                     
@@ -191,14 +208,14 @@
                     .step-content{
                         left: 30%;
                         animation-name: buble;
-                        animation-delay: 0.3s;
+                        animation-delay: 1s;
                         animation-duration: 1s;
                         animation-fill-mode: forwards;
 
                         &:before{
                             border-left: 20px solid transparent;
                             border-right: 7px solid transparent;
-                            border-bottom: 20px solid #c0c0c0;
+                            border-bottom: 20px solid #f7bf3c;
                         }
                     }
                 }
@@ -209,14 +226,14 @@
                     .step-content{
                         left: 50%;
                         animation-name: buble;
-                        animation-delay: 0.8s;
+                        animation-delay: 1.5s;
                         animation-duration: 1s;
                         animation-fill-mode: forwards;
 
                         &:before{
                             border-left: 20px solid transparent;
                             border-right: 14px solid transparent;
-                            border-bottom: 20px solid #c0c0c0;
+                            border-bottom: 20px solid #f7bf3c;
                         }
                     }
                 }
@@ -227,14 +244,14 @@
                     .step-content{
                         left: 70%;
                         animation-name: buble;
-                        animation-delay: 1.3s;
+                        animation-delay: 2s;
                         animation-duration: 1s;
                         animation-fill-mode: forwards;
 
                         &:before{
                             border-left: 14px solid transparent;
                             border-right: 20px solid transparent;
-                            border-bottom: 20px solid #c0c0c0;
+                            border-bottom: 20px solid #f7bf3c;
                         }
                     }
                 }
@@ -245,14 +262,14 @@
                     .step-content{
                         left: 90%;
                         animation-name: buble;
-                        animation-delay: 1.8s;
+                        animation-delay: 2.5s;
                         animation-duration: 1s;
                         animation-fill-mode: forwards;
 
                         &:before{
                             border-left: 7px solid transparent;
                             border-right: 20px solid transparent;
-                            border-bottom: 20px solid #c0c0c0;
+                            border-bottom: 20px solid #f7bf3c;
                         }
                     }
                 }
@@ -427,6 +444,7 @@
     img{
         width: 100%;
         height: auto;
+        opacity: 0.6;
     }
 
     .img-overlay{
@@ -440,7 +458,7 @@
             right: 0;
             bottom: 7px;
             background-image: linear-gradient(to right, #8CC63E 0%, #0090e3 100%);
-            opacity: 0.4;
+            opacity: 0.6;
         }
     }
 }
@@ -459,6 +477,44 @@
 
 .pb-20{
     padding-bottom: 20px;
+}
+
+p img{
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+
+    &.img-mr-5{
+        margin-right: 5px;
+    }
+
+    &.img-ml-5{
+        margin-left: 5px;
+    }
+
+    &.img-mx-5{
+        margin: 0 5px;
+    }
+}
+
+.VueCarousel-dot{
+    width: auto!important;
+    height: auto!important;
+    padding: 5px!important;
+    background-color: transparent!important;
+    color: #0090e3;
+
+    &:nth-child(1):before{
+        content: '1';
+    }
+
+    &:nth-child(2):before{
+        content: '2';
+    }
+
+    &:nth-child(3):before{
+        content: '3';
+    }
 }
 
 @media(max-width: 1280px){
