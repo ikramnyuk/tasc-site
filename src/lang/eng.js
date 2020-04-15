@@ -2,7 +2,7 @@ const eng = {
     home: {
         section1: {
             label: "End-to-end services in the tendering process",
-            intro: "TASC is a company founded in 2004 by experts dealing with public institutions and managing institutional projects. TASC’s office is just a few minutes from the European institutions.",
+            intro: "TASC is a company founded in 2004 by experts dealing with public institutions and managing institutional projects. TASC’s office is just a few minutes from the european institutions.",
             subIntro: "TASC delivers its services throughout all of Europe"
         },
 
@@ -20,7 +20,7 @@ const eng = {
             case3Bold: "to build the offer",
             case4: "we select your",
             case4Bold: "right partner",
-            download: "Download our free book «How to be successful In the public market»"
+            download: "Download our e-book «How to be successful in the public market»"
         },
 
         section3: {
@@ -31,8 +31,8 @@ const eng = {
             list1_2: "For local, national & international opportunities",
             list1_3: "With unlimited search profiles",
             list1_4: "At a flexible and low subscription free",
-            list1_5: "Follow your preferred tenders on a personal dashboard",
-            list1_6: "Get notified by mail on new tenders and deadlines",
+            list1_5: "To follow your preferred tenders on a personal dashboard",
+            list1_6: "To get notified by mail on new tenders and deadlines",
             list2Label: "is an International public procurement platform.",
             list2Sublabel: "is an international public procurement platform",
             list2Sublabel2part1: "TASC is",
@@ -57,20 +57,15 @@ const eng = {
             label: "Offer Building",
             subLabel: "From the thorough analysis of the tender documents until the submission of your offer.",
             listLabel: "TASC actions include",
-            list_1: "Analysing calls for tender’s documents",
-            list_2: "Structuring tender’s offer",
-            list_3: "Setting up bid planning",
-            list_4: "Identifying the desired requirements",
-            list_5: "Identifying the key tender success factors",
-            list_6: "Identifying complementary skills that are needed",
-            list_7: "Setting up and negotiating agreements with third parties",
-            list_8: "Listing the requested administrative documents",
-            list_9: "Writing the offer’s texts",
-            list_10: "Layouting Complete offer",
-            list_11: "Completely screening the tender document before submission",
-            list_12: "Delivering of the offer within the deadline"
+            list_1: "Analysing calls for tender and identifying required skills and documents",
+            list_2: "Structuring tender’s offer and setting up bid planning",
+            list_3: "Setting up and negotiating agreements with all types of partners",
+            list_4: "Writing the offer’s texts",
+            list_5: "Layouting",
+            list_6: "Thoroughly screening the tender documents",
+            list_7: "Delivering of the offer within the deadline"
         },
-
+        
         section6: {
             label: "Partnerships",
             subLabel1: "You may need complementary resources for specific tenders.",

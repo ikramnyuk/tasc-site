@@ -26,15 +26,15 @@
                         <h3>{{translate('common', 'headerAndFooter', 'footerLabel2')}}</h3>
 
                         <ul>
-                            <li><a href="#">
+                            <li><a href="https://www.linkedin.com/in/beno%C3%AEt-conti-808967/" target="blank">
                                 <i class="fab fa-linkedin"></i>
                                 <span>Linkedin</span>
                             </a></li>
-                            <li><a href="#">
+                            <li><a href="https://twitter.com/BenotConti" target="blank">
                                 <i class="fab fa-twitter"></i>
                                 <span>Twitter</span>
                             </a></li>
-                            <li><a href="#">
+                            <li><a href="https://www.facebook.com/euro.tasc" target="blank">
                                 <i class="fab fa-facebook"></i>
                                 <span>Facebook</span>
                             </a></li>

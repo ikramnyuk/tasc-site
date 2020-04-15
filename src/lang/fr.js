@@ -9,7 +9,7 @@ const fr = {
         section2: {
             label: "Nos services de A à Z pour l’obtention de marchés publics",
             preCase1: "veille sur les marchés publics",
-            preCase2: "analyse de l’Eligibilité des entités soumissionnaires",
+            preCase2: "analyse de votre éligibilité des entités soumissionnaires",
             preCase3: "montage des offres",
             preCase4: "recherche et montage de partenariats",
             case1: "nous trouvons des",
@@ -40,7 +40,7 @@ const fr = {
             list2_1: "Nous identifions avec nos clients les éléments-clés de leur veille",
             list2_2: "Nous trouvons pour nos clients les marchés publics qui leur correspondent",
             list2_3: "Nous élargissons signicativement l’horizon des marchés de nos clients",
-            link2: "Entrez dans notre service de surveillance et obtenez un essai gratuit"
+            link2: "Entrez dans notre service de veille et obtenez un essai gratuit. Actuellement en anglais, disponible prochainement en français"
         },
 
         section4: {
@@ -57,20 +57,15 @@ const fr = {
             label: "Construction d’offre",
             subLabel: "De l’analyse du cahier des charges à la soumission de l’offre.",
             listLabel: "Nos services",
-            list_1: "Analyse des documents du cahier des charges",
-            list_2: "Elaboration de la structure du dossier d’offre",
-            list_3: "Elaboration du planning d’écriture de l’offre",
-            list_4: "Identification des attentes précises de l’Adjudicateur",
-            list_5: "Définition des orientations de l’offre",
-            list_6: "Identification des compétences à valoriser",
-            list_7: "Négociations et créations des documents d’accord avec les parties tierces",
-            list_8: "Sélection des documents administratifs",
-            list_9: "Rédaction des éléments de l’offre",
-            list_10: "Mise en page de l’offre",
-            list_11: "Relecture complète de l’offre avant sa soumission",
-            list_12: "Soumission de l’offre dans les temps impartis"
+            list_1: "Analyse du cahier des charges et identification des attentes précises de l’Adjudicateur",
+            list_2: "Elaboration de la structure de l’offre et planning de rédaction",
+            list_3: "Négociations et créations des documents d’accord avec tous types de partenaires",
+            list_4: "Rédaction d’éléments de l’offre",
+            list_5: "Mise en page",
+            list_6: "Relecture complète",
+            list_7: "Soumission de l’offre dans les temps impartis"
         },
-
+        
         section6: {
             label: "Partenariats",
             subLabel1: "Besoin d’expertises complémentaires pour un marché spécifique?",

@@ -23,7 +23,7 @@
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase1')}}</span>
                             <div class="step-content" v-if="casesVisible">
-                                {{translate('home', 'section2', 'case1')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case1Bold')}}</span> 
+                                {{translate('home', 'section2', 'case1')}}  <span class="solid-text">{{translate('home', 'section2', 'case1Bold')}}</span> 
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase2')}}</span>
                             <div class="step-content" v-if="casesVisible">
-                                {{translate('home', 'section2', 'case2')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case2Bold')}}</span> 
+                                {{translate('home', 'section2', 'case2')}}  <span class="solid-text">{{translate('home', 'section2', 'case2Bold')}}</span> 
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase3')}}</span>
                             <div class="step-content" v-if="casesVisible">
-                                {{translate('home', 'section2', 'case3')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case3Bold')}}</span> 
+                                {{translate('home', 'section2', 'case3')}}  <span class="solid-text">{{translate('home', 'section2', 'case3Bold')}}</span> 
                             </div>
                         </div>
                     </div>
@@ -47,14 +47,14 @@
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase4')}}</span>
                             <div class="step-content" v-if="casesVisible">
-                                {{translate('home', 'section2', 'case4')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case4Bold')}}</span> 
+                                {{translate('home', 'section2', 'case4')}}  <span class="solid-text">{{translate('home', 'section2', 'case4Bold')}}</span> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <a href="#" class="download-boock">{{translate('home', 'section2', 'download')}}</a>
+            <!-- <a href="#" class="download-boock">{{translate('home', 'section2', 'download')}}</a> -->
         </section>
 
         <section class="main-section section-3 bg-section" id="monitoring"> 
@@ -161,11 +161,6 @@
                             <li>{{translate('home', 'section5', 'list_5')}}</li>
                             <li>{{translate('home', 'section5', 'list_6')}}</li>
                             <li>{{translate('home', 'section5', 'list_7')}}</li>
-                            <li>{{translate('home', 'section5', 'list_8')}}</li>
-                            <li>{{translate('home', 'section5', 'list_9')}}</li>
-                            <li>{{translate('home', 'section5', 'list_10')}}</li>
-                            <li>{{translate('home', 'section5', 'list_11')}}</li>
-                            <li>{{translate('home', 'section5', 'list_12')}}</li>
                         </ul>
                     </div>
 
