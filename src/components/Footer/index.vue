@@ -1,5 +1,5 @@
 <template>
-    <div class="gradiented-wrapp">
+    <div class="gradiented-wrapp" :key="currentLang">
         <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#top-point" class="pagenav to-top">
             <i class="fas fa-chevron-up"></i>
         </a>
@@ -71,12 +71,22 @@
     export default {
         name: "Footer",
         mixins: [translate],
+        
+        props: ['lang'],
+
+        watch: { 
+            lang: function(newVal) {
+                this.currentLang = newVal;
+                console.log(newVal + ' footer');
+            }
+        },
 
         components: {},
         
         data() {
             return {
-                scrolled: false
+                scrolled: false,
+                currentLang: ''
             };
         },
 

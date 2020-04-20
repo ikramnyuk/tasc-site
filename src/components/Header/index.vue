@@ -91,7 +91,7 @@
 
             changeLang(){
                 localStorage.lang = this.selectedLang;
-                this.$parent.langChanged()
+                this.$parent.langChanged(this.selectedLang)
             }
         }
     };

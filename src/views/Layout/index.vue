@@ -1,10 +1,10 @@
 <template>
     <div>
-        <Header :key="switchIndex+2" />
+        <Header :lang="lang" />
         
-        <Home :key="switchIndex"/>
+        <Home :lang="lang"/>
 
-        <Footer :key="switchIndex+1" />
+        <Footer :lang="lang" />
     </div>
 </template>
 
@@ -22,13 +22,15 @@
 
         data() {
             return {
-                switchIndex: 0
+                lang: ''
             };
         },
 
         methods: {
-            langChanged(){
-                this.switchIndex++;
+            langChanged(lang){
+                this.lang = lang;
+
+                console.log('catch lang ' + lang)
             }
         }
     };

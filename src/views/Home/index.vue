@@ -405,9 +405,18 @@
     export default {
         name: "Home",
         mixins: [translate],
+        
+        props: ['lang'],
 
         components: {Carousel, Slide, LMap, LTileLayer, LMarker},
         
+        watch: { 
+            lang: function(newVal) {
+                this.currentLang = newVal;
+                console.log(newVal + ' home');
+            }
+        },
+
         data() {
             return {
                 center: latLng(50.830593, 4.404381),
@@ -429,7 +438,7 @@
                     scrollWheelZoom: false
                 },
                 casesVisible: false,
-                currentLang: 'Eng'
+                currentLang: ''
             };
         },
 
