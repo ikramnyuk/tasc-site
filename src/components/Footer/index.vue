@@ -1,5 +1,13 @@
 <template>
     <div class="gradiented-wrapp">
+        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#top-point" class="pagenav to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
+        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#bottom-point" class="pagenav to-bottom">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+
         <div class="custom-container">
             <footer class="main-footer">
                 <div class="logo-col">
@@ -67,7 +75,23 @@
         components: {},
         
         data() {
-            return {};
+            return {
+                scrolled: false
+            };
+        },
+
+        created(){
+            let self = this;
+
+            window.addEventListener("scroll", function() {
+                var top = this.scrollY;
+
+                if(top >= 400){
+                    self.scrolled = true;
+                }else{
+                    self.scrolled = false;
+                }
+            }, false);
         },
 
         methods: {

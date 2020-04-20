@@ -11,7 +11,7 @@
                     <a href="#offer" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link3')}}</a>
                     <a href="#partnership" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link4')}}</a>
                     <a href="#about" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link5')}}</a>
-                    <a href="#tascForm" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link6')}}</a>
+                    <a href="#contact" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link6')}}</a>
                 </nav>
 
                 <div class="menu-right">
@@ -20,7 +20,7 @@
                         <v-select :items="langItems" item-text="label" item-value="value" v-model="selectedLang" @change="changeLang()" label=""></v-select>
                     </div>
 
-                    <!-- <v-menu bottom origin="center center" transition="scale-transition" class="mobile-menu">
+                    <v-menu bottom origin="center center" transition="scale-transition" class="mobile-menu">
                         <template v-slot:activator="{ on }">
                             <v-btn color="primary" dark v-on="on" class="d-sm-inline-flex d-xs-inline-flex d-md-none mobile-menu-btn">
                                 <v-icon>fa-bars</v-icon>
@@ -55,22 +55,14 @@
                             </v-list-item>
                             <v-list-item>
                                 <v-list-item-title>
-                                    <a v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#tascForm">{{translate('common', 'headerAndFooter', 'link6')}}</a>
+                                    <a v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#contact">{{translate('common', 'headerAndFooter', 'link6')}}</a>
                                 </v-list-item-title>
                             </v-list-item>
                         </v-list>
-                    </v-menu> -->
+                    </v-menu>
                 </div>
             </header>
         </div>
-
-        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#top-point" class="pagenav to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-
-        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#bottom-point" class="pagenav to-bottom">
-            <i class="fas fa-chevron-down"></i>
-        </a>
     </div>
 </template>
 
@@ -89,22 +81,7 @@
             return {
                 langItems: [{label: 'English', value: 'Eng'}, {label: 'Français', value: 'Fr'}],
                 selectedLang: localStorage.lang || "Eng",
-                scrolled: false
             };
-        },
-
-        created(){
-            let self = this;
-
-            window.addEventListener("scroll", function() {
-                var top = this.scrollY;
-
-                if(top >= 400){
-                    self.scrolled = true;
-                }else{
-                    self.scrolled = false;
-                }
-            }, false);
         },
 
         methods: {
