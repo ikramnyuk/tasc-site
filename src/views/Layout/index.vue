@@ -2,7 +2,7 @@
     <div>
         <Header :key="switchIndex+2"/>
         
-        <router-view :key="switchIndex"></router-view>
+        <router-view></router-view>
 
         <Footer :key="switchIndex+1"/>
     </div>
