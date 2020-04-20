@@ -15,11 +15,6 @@
                 </nav>
 
                 <div class="menu-right">
-                    <!-- <nav class="d-none d-md-flex d-lg-flex">
-                        <router-link to="/about">{{translate('common', 'headerAndFooter', 'link5')}}</router-link>
-                        <router-link to="/contact">{{translate('common', 'headerAndFooter', 'link6')}}</router-link>
-                    </nav> -->
-
                     <div class="lang-switch">
                         <v-select :items="langItems" item-text="label" item-value="value" v-model="selectedLang" @change="changeLang()" label=""></v-select>
                     </div>
