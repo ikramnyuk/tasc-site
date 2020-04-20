@@ -8,17 +8,28 @@
 	z-index: 100000!important;
 }
 
-.to-top{
+.pagenav{
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	bottom: 100px;
 	right: 50px;
 	background-color: #0592dd;
 	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
 	color: #fff;
 	cursor: pointer;
+
+	&.to-top{
+		bottom: 100px;
+	}
+
+	&.to-bottom{
+		bottom: 50px;
+
+		i{
+			top: 13px;
+		}
+	}
 
 	i{
 		position: absolute;

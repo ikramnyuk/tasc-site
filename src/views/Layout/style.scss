@@ -70,17 +70,26 @@ ul li{
 
 .more{
 	position: relative;
-	max-width: 350px;
+	max-width: 366px;
 	display: inline-block;
 	margin-top: 20px;
 	padding: 8px 12px;
 	font-size: 10px;
-	background-color: #f7bf3c;
+	background-color: magenta;
 	color: #fff;
 	border-radius: 5px;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.5);
+
+	img{
+		width: 30px;
+		height: auto;
+		vertical-align: middle;
+	}
 
 	span{
 		margin-right: 10px;
+		margin-left: 10px;
+		vertical-align: middle;
 		font-size: 14px;
 		color: #fff;
 	}

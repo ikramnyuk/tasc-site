@@ -23,7 +23,7 @@
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase1')}}</span>
                             <div class="step-content" v-if="casesVisible">
-                                {{translate('home', 'section2', 'case1')}}  <span class="solid-text">{{translate('home', 'section2', 'case1Bold')}}</span> 
+                                {{translate('home', 'section2', 'case1')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case1Bold')}}</span> 
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase2')}}</span>
                             <div class="step-content" v-if="casesVisible">
-                                {{translate('home', 'section2', 'case2')}}  <span class="solid-text">{{translate('home', 'section2', 'case2Bold')}}</span> 
+                                {{translate('home', 'section2', 'case2')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case2Bold')}}</span> 
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase3')}}</span>
                             <div class="step-content" v-if="casesVisible">
-                                {{translate('home', 'section2', 'case3')}}  <span class="solid-text">{{translate('home', 'section2', 'case3Bold')}}</span> 
+                                {{translate('home', 'section2', 'case3')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case3Bold')}}</span> 
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                         <div class="step-label">
                             <span>{{translate('home', 'section2', 'preCase4')}}</span>
                             <div class="step-content" v-if="casesVisible">
-                                {{translate('home', 'section2', 'case4')}}  <span class="solid-text">{{translate('home', 'section2', 'case4Bold')}}</span> 
+                                {{translate('home', 'section2', 'case4')}} <br/> <span class="solid-text">{{translate('home', 'section2', 'case4Bold')}}</span> 
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                         </div>
 
                         <div class="more-wrap">
-                            <a href="https://www.tender-it.com/" class="more"><span>{{translate('home', 'section3', 'link2')}}</span><i class="fas fa-chevron-right"></i></a>
+                            <a href="https://www.tender-it.com/" class="more"><img src="@/assets/img/tender-icon.png" alt="tender process"><span>{{translate('home', 'section3', 'link2')}}</span><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -260,31 +260,68 @@
             <div class="custom-container">
                 <h3 class="section-title centered">{{translate('about', 'section4', 'label')}}</h3>
 
-                <carousel class="testimonials" :autoplay="true" :perPageCustom="[[320, 1], [1024, 2]]">
+                <carousel class="testimonials" :autoplay="true" :perPageCustom="[[320, 1], [1024, 1]]" :scrollPerPage="true">
+                    <slide>
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case1')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case1Sub')}}</div>
+                        </div>
+
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case2')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case2Sub')}}</div>
+                        </div>
+                    </slide>
+
+                    <slide>
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case3')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case3Sub')}}</div>
+                        </div>
+
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case4')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case4Sub')}}</div>
+                        </div>
+                    </slide>
+
+                    <slide>
+                        <div class="slide-wrapp">
+                            <div class="slide-text">{{translate('about', 'section4', 'case5')}}</div>
+                            <div class="slide-author">{{translate('about', 'section4', 'case5Sub')}}</div>
+                        </div>
+                    </slide>
+                </carousel>
+
+                <carousel class="testimonials testimonials-mobile" :autoplay="true" :perPageCustom="[[320, 1], [1024, 1]]" :scrollPerPage="true">
                     <slide>
                         <div class="slide-wrapp">
                             <div class="slide-text">{{translate('about', 'section4', 'case1')}}</div>
                             <div class="slide-author">{{translate('about', 'section4', 'case1Sub')}}</div>
                         </div>
                     </slide>
+
                     <slide>
                         <div class="slide-wrapp">
                             <div class="slide-text">{{translate('about', 'section4', 'case2')}}</div>
                             <div class="slide-author">{{translate('about', 'section4', 'case2Sub')}}</div>
                         </div>
                     </slide>
+
                     <slide>
                         <div class="slide-wrapp">
                             <div class="slide-text">{{translate('about', 'section4', 'case3')}}</div>
                             <div class="slide-author">{{translate('about', 'section4', 'case3Sub')}}</div>
                         </div>
                     </slide>
+
                     <slide>
                         <div class="slide-wrapp">
                             <div class="slide-text">{{translate('about', 'section4', 'case4')}}</div>
                             <div class="slide-author">{{translate('about', 'section4', 'case4Sub')}}</div>
                         </div>
                     </slide>
+
                     <slide>
                         <div class="slide-wrapp">
                             <div class="slide-text">{{translate('about', 'section4', 'case5')}}</div>
@@ -304,7 +341,7 @@
             </LMap>
         </div>
 
-        <div class="main-section bg-section contact-wrapp">
+        <div class="main-section bg-section contact-wrapp" id="bottom-point">
             <div class="contact-container">
                 <h3 class="section-title">{{translate('contact', 'section1', 'label')}}</h3>
 
@@ -356,7 +393,7 @@
     import { latLng, icon } from "leaflet";
     import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
     import 'leaflet/dist/leaflet.css';
-    import iconUrl from "../../assets/img/marker.svg";
+    import iconUrl from "../../assets/img/logo-marker.svg";
 
     import { sendEmail } from "../../api/common";
 
@@ -379,7 +416,7 @@
                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
                 icon: icon({
                     iconUrl: iconUrl,
-                    iconSize: [45, 45],
+                    iconSize: [30, 30],
                     iconAnchor: [16, 37]
                 }),
                 firstName: "",

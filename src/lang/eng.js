@@ -8,10 +8,10 @@ const eng = {
 
         section2: {
             label: "The end-to-end services in the tendering process",
-            preCase1: "tender monitoring",
-            preCase2: "your eligibility",
-            preCase3: "offer building",
-            preCase4: "tender partnership",
+            preCase1: "Tender monitoring",
+            preCase2: "Your eligibility",
+            preCase3: "Offer building",
+            preCase4: "Tender partnership",
             case1: "we find",
             case1Bold: "appropriate tenders for you",
             case2: "we assess your",
@@ -37,9 +37,9 @@ const eng = {
             list2Sublabel: "is an international public procurement platform",
             list2Sublabel2part1: "TASC is",
             list2Sublabel2part2: "exclusive partner for entities in Belgium, France and Luxembourg",
-            list2_1: "Support and help Belgian, French and Luxembourger customers",
+            list2_1: "Supporting and help Belgian, French and Luxembourger customers",
             list2_2: "Building their search profile",
-            list2_3: "Offer complementary tender services",
+            list2_3: "Offering complementary tender services",
             link2: "Enter our monitoring service and get a free trial"
         },
 

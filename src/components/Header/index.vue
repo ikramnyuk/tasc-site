@@ -68,8 +68,12 @@
             </header>
         </div>
 
-        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#top-point" class="to-top">
+        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#top-point" class="pagenav to-top">
             <i class="fas fa-chevron-up"></i>
+        </a>
+
+        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#bottom-point" class="pagenav to-bottom">
+            <i class="fas fa-chevron-down"></i>
         </a>
     </div>
 </template>
@@ -94,8 +98,6 @@
         },
 
         created(){
-            this.selectedLang = localStorage.lang || "Eng";
-
             let self = this;
 
             window.addEventListener("scroll", function() {

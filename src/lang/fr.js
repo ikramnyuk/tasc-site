@@ -8,16 +8,16 @@ const fr = {
 
         section2: {
             label: "Nos services de A à Z pour l’obtention de marchés publics",
-            preCase1: "veille sur les marchés publics",
-            preCase2: "analyse de votre éligibilité des entités soumissionnaires",
-            preCase3: "montage des offres",
-            preCase4: "recherche et montage de partenariats",
+            preCase1: "Veille sur les marchés publics",
+            preCase2: "Analyse de votre éligibilité",
+            preCase3: "Montage des offres",
+            preCase4: "Recherche et montage de partenariats",
             case1: "nous trouvons des",
             case1Bold: "offres appropriées pour vous",
             case2: "nous évaluons votre",
             case2Bold: "capacité à offrir",
             case3: "nous vous accompagnons",
-            case3Bold: "pour construire l'offre",
+            case3Bold: "pour affaire offre",
             case4: "nous vous sélectionnons",
             case4Bold: "le bon partenaire",
             download: "Download our free book «How to be successful In the public market»"
