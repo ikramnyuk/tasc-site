@@ -1,23 +1,24 @@
 <template>
     <div>
-        <Header/>
+        <Header :key="switchIndex+2" />
         
-        <router-view></router-view>
+        <Home :key="switchIndex"/>
 
-        <Footer/>
+        <Footer :key="switchIndex+1" />
     </div>
 </template>
 
 <script>
     import Header from '../../components/Header/index.vue';
     import Footer from '../../components/Footer/index.vue';
+    import Home from '../Home/index';
 
     import './style.scss';
 
     export default {
         name: "Layout",
 
-        components: {Header, Footer},
+        components: {Home, Header, Footer},
 
         data() {
             return {
@@ -27,7 +28,7 @@
 
         methods: {
             langChanged(){
-                
+                this.switchIndex++;
             }
         }
     };

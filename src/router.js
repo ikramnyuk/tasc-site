@@ -3,7 +3,6 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import Home from './views/Home/index';
 import Privacy from './views/Privacy/index';
 import Layout from './views/Layout/index';
 
@@ -11,13 +10,6 @@ const routes = [
     {
         path: '/',
         component: Layout,
-        children: [
-            {
-                path: '/',
-                component: Home,
-                name: 'Home'
-            }
-        ]
     },
     {
         path: '/privacy',
