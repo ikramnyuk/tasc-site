@@ -15,6 +15,7 @@
                 </nav>
 
                 <div class="menu-right">
+
                     <div class="lang-switch">
                         <v-select :items="langItems" item-text="label" item-value="value" v-model="selectedLang" @change="changeLang()" label=""></v-select>
                     </div>
@@ -87,7 +88,7 @@
         data() {
             return {
                 langItems: [{label: 'English', value: 'Eng'}, {label: 'Français', value: 'Fr'}],
-                selectedLang: "Eng",
+                selectedLang: localStorage.lang || "Eng",
                 scrolled: false
             };
         },
