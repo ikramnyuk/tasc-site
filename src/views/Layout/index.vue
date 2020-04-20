@@ -1,10 +1,10 @@
 <template>
     <div>
-        <Header :key="switchIndex+2"/>
+        <Header/>
         
         <router-view></router-view>
 
-        <Footer :key="switchIndex+1"/>
+        <Footer/>
     </div>
 </template>
 
@@ -27,7 +27,7 @@
 
         methods: {
             langChanged(){
-                this.switchIndex++;
+                
             }
         }
     };
