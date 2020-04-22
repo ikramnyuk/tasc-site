@@ -67,16 +67,16 @@
 }
 
 .testimonials-mobile{
-    display: none;
+    display: none!important;
 }
 
 @media(max-width: 1024px){
     .testimonials{
-        display: none;
+        display: none!important;
     }
 
     .testimonials-mobile{
-        display: flex;
+        display: flex!important;
     }
     
     .slide-wrapp{

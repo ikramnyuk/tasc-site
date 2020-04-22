@@ -91,7 +91,7 @@
                         </p>
                         <p class="description bold pt-0 pb-20">
                             <span>{{translate('home', 'section3', 'list2Sublabel2part1')}}</span>
-                            <img src="@/assets/img/tender-it-logo.png" class="img-mx-5" alt="">
+                            
                             <span><span>{{translate('home', 'section3', 'list2Sublabel2part2')}}</span></span>
                         </p>
 
@@ -425,7 +425,7 @@
                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
                 icon: icon({
                     iconUrl: iconUrl,
-                    iconSize: [30, 30],
+                    iconSize: [40, 40],
                     iconAnchor: [16, 37]
                 }),
                 firstName: "",
