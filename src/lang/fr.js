@@ -17,7 +17,7 @@ const fr = {
             case2: "Nous évaluons votre",
             case2Bold: "capacité à offrir",
             case3: "Nous vous accompagnons",
-            case3Bold: "pour construire votre",
+            case3Bold: "pour construire votre offre",
             case4: "Nous vous sélectionnons",
             case4Bold: "le bon partenaire",
             download: "Download our free book «How to be successful In the public market»"

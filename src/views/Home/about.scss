@@ -45,13 +45,7 @@
     padding-top: 40px;
 }
 
-.VueCarousel-slide{
-    display: flex;
-    justify-content: center;
-}
-
 .slide-wrapp{
-    width: 50%;
     text-align: center;
 }
 
@@ -66,23 +60,7 @@
     font-size: 14px;
 }
 
-.testimonials-mobile{
-    display: none!important;
-}
-
 @media(max-width: 1024px){
-    .testimonials{
-        display: none!important;
-    }
-
-    .testimonials-mobile{
-        display: flex!important;
-    }
-    
-    .slide-wrapp{
-        width: 100%;
-        max-width: 700px;
-    }
 
     .cases{
         flex-wrap: wrap;

@@ -266,39 +266,6 @@
                             <div class="slide-text">{{translate('about', 'section4', 'case1')}}</div>
                             <div class="slide-author">{{translate('about', 'section4', 'case1Sub')}}</div>
                         </div>
-
-                        <div class="slide-wrapp">
-                            <div class="slide-text">{{translate('about', 'section4', 'case2')}}</div>
-                            <div class="slide-author">{{translate('about', 'section4', 'case2Sub')}}</div>
-                        </div>
-                    </slide>
-
-                    <slide>
-                        <div class="slide-wrapp">
-                            <div class="slide-text">{{translate('about', 'section4', 'case3')}}</div>
-                            <div class="slide-author">{{translate('about', 'section4', 'case3Sub')}}</div>
-                        </div>
-
-                        <div class="slide-wrapp">
-                            <div class="slide-text">{{translate('about', 'section4', 'case4')}}</div>
-                            <div class="slide-author">{{translate('about', 'section4', 'case4Sub')}}</div>
-                        </div>
-                    </slide>
-
-                    <slide>
-                        <div class="slide-wrapp">
-                            <div class="slide-text">{{translate('about', 'section4', 'case5')}}</div>
-                            <div class="slide-author">{{translate('about', 'section4', 'case5Sub')}}</div>
-                        </div>
-                    </slide>
-                </carousel>
-
-                <carousel class="testimonials testimonials-mobile" :autoplay="true" :perPageCustom="[[320, 1], [1024, 1]]" :scrollPerPage="true">
-                    <slide>
-                        <div class="slide-wrapp">
-                            <div class="slide-text">{{translate('about', 'section4', 'case1')}}</div>
-                            <div class="slide-author">{{translate('about', 'section4', 'case1Sub')}}</div>
-                        </div>
                     </slide>
 
                     <slide>
