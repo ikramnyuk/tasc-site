@@ -54,7 +54,7 @@ const eng = {
         },
 
         section5: {
-            label: "Offer Building",
+            label: "Offer building",
             subLabel: "From the thorough analysis of the tender documents until the submission of your offer.",
             listLabel: "TASC actions include",
             list_1: "Analysing calls for tender and identifying required skills and documents",
