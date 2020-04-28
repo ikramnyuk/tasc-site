@@ -125,11 +125,17 @@
 
             scrollTo(direction){
                 let currentScroll = window.pageYOffset;
-                console.log(currentScroll);
+                
                 if(direction == 'top'){
                     for(let i = 0; i < this.scrollPoints.length; i++) {
-                        if(currentScroll <= this.scrollPoints[i]){
-                            console.log(this.scrollPoints[i]);
+                        if(this.scrollPoints[i] > currentScroll){
+                            if(i > 0){
+                                this.smoothScroll(i - 1);
+                                break;
+                            }
+                        }
+
+                        if(this.scrollPoints[i] == currentScroll){
                             if(i > 0){
                                 this.smoothScroll(i - 1);
                                 break;
