@@ -107,15 +107,7 @@
         },
 
         mounted(){
-            let sections = document.querySelectorAll('.scroll-point'),
-                scrollArr = [];
             
-            for(let item of sections){
-                scrollArr.push(item.offsetTop);    
-            }
-            
-            this.scrollPoints = scrollArr;
-            this.sections = sections;
         },
 
         methods: {
@@ -124,28 +116,32 @@
             },
 
             scrollTo(direction){
-                let currentScroll = window.pageYOffset;
+                let currentScroll = window.scrollY,
+                    sections = document.querySelectorAll('.scroll-point'),
+                    scrollArr = [];
                 
+                for(let item of sections){
+                    scrollArr.push(item.offsetTop);    
+                }
+                
+                this.scrollPoints = scrollArr;
+                this.sections = sections;
+
                 if(direction == 'top'){
                     for(let i = 0; i < this.scrollPoints.length; i++) {
-                        if(this.scrollPoints[i] == currentScroll){
-                            if(i > 0){
-                                this.smoothScroll(i - 1);
-                                break;
-                            }
-                        }
-
-                        if(this.scrollPoints[i] > currentScroll){
-                            if(i > 0){
-                                this.smoothScroll(i - 1);
-                                break;
-                            }
+                        console.log('step ' + i + ': ' + this.scrollPoints[i]);
+                        console.log('current: ' + currentScroll);
+                        if(this.scrollPoints[i] >= currentScroll){
+                            this.smoothScroll(i - 1);
+                            break;
                         }
                     }
                 }
             
                 if(direction == 'bottom'){
                     for(let i = 0; i < this.scrollPoints.length; i++) {
+                        console.log('step ' + i + ': ' + this.scrollPoints[i]);
+                        console.log('current: ' + currentScroll);
                         if(this.scrollPoints[i] == currentScroll){
                             this.smoothScroll(i + 1);
                             break;
@@ -160,7 +156,7 @@
             },
 
             smoothScroll(position){
-                console.log(this.sections[position].offsetTop);
+                console.log(position, this.sections[position]);
                 this.$scrollTo(this.sections[position])
             }
         }
