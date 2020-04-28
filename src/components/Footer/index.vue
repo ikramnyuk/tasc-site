@@ -128,14 +128,14 @@
                 
                 if(direction == 'top'){
                     for(let i = 0; i < this.scrollPoints.length; i++) {
-                        if(this.scrollPoints[i] > currentScroll){
+                        if(this.scrollPoints[i] == currentScroll){
                             if(i > 0){
                                 this.smoothScroll(i - 1);
                                 break;
                             }
                         }
 
-                        if(this.scrollPoints[i] == currentScroll){
+                        if(this.scrollPoints[i] > currentScroll){
                             if(i > 0){
                                 this.smoothScroll(i - 1);
                                 break;
