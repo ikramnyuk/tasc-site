@@ -1,14 +1,14 @@
 <template>
     <div class="gradiented-wrapp" :key="currentLang">
-        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#top-point" class="pagenav to-top">
+        <a v-if="scrolled" @click="scrollTo('top')" class="pagenav to-top">
             <i class="fas fa-chevron-up"></i>
         </a>
 
-        <a v-if="scrolled" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" href="#bottom-point" class="pagenav to-bottom">
+        <a v-if="scrolled" @click="scrollTo('bottom')" class="pagenav to-bottom">
             <i class="fas fa-chevron-down"></i>
         </a>
 
-        <div class="custom-container">
+        <div class="scroll-point custom-container">
             <footer class="main-footer">
                 <div class="logo-col">
                     <a href="#" class="logo">
@@ -86,7 +86,9 @@
         data() {
             return {
                 scrolled: false,
-                currentLang: ''
+                currentLang: '',
+                scrollPoints: [],
+                sections: []
             };
         },
 
@@ -104,9 +106,56 @@
             });
         },
 
+        mounted(){
+            let sections = document.querySelectorAll('.scroll-point'),
+                scrollArr = [];
+            
+            for(let item of sections){
+                scrollArr.push(item.offsetTop);    
+            }
+            
+            this.scrollPoints = scrollArr;
+            this.sections = sections;
+        },
+
         methods: {
             goTo(route){
                 this.$router.push({ path: route })
+            },
+
+            scrollTo(direction){
+                let currentScroll = window.pageYOffset;
+                console.log(currentScroll);
+                if(direction == 'top'){
+                    for(let i = 0; i < this.scrollPoints.length; i++) {
+                        if(currentScroll <= this.scrollPoints[i]){
+                            console.log(this.scrollPoints[i]);
+                            if(i > 0){
+                                this.smoothScroll(i - 1);
+                                break;
+                            }
+                        }
+                    }
+                }
+            
+                if(direction == 'bottom'){
+                    for(let i = 0; i < this.scrollPoints.length; i++) {
+                        if(this.scrollPoints[i] == currentScroll){
+                            this.smoothScroll(i + 1);
+                            break;
+                        }
+
+                        if(this.scrollPoints[i] > currentScroll){
+                            this.smoothScroll(i);
+                            break;
+                        }
+                    }
+                }
+            },
+
+            smoothScroll(position){
+                console.log(this.sections[position].offsetTop);
+                this.$scrollTo(this.sections[position])
             }
         }
     };

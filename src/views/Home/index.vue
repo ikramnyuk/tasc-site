@@ -1,6 +1,6 @@
 <template>
     <main class="main-wrapper" id="top-point">
-        <section class="section-1" id="intro">
+        <section class="scroll-point section-1" id="intro">
             <div class="intro intro-mb">
                 <img class="logo" src="@/assets/img/logo.png" alt="logo">
 
@@ -57,7 +57,7 @@
             <!-- <a href="#" class="download-boock">{{translate('home', 'section2', 'download')}}</a> -->
         </section>
 
-        <section class="main-section section-3 bg-section" id="monitoring"> 
+        <section class="scroll-point main-section section-3 bg-section" id="monitoring"> 
             <div class="custom-container">
                 <h3 class="section-title">{{translate('home', 'section3', 'label')}}</h3>
 
@@ -120,7 +120,7 @@
             </div>
         </section>
         
-        <section class="main-section shape-toright" id="eligibility">
+        <section class="scroll-point main-section shape-toright" id="eligibility">
             <div class="custom-container">
                 <h3 class="section-title">{{translate('home', 'section4', 'label')}}</h3>
                 <p class="description bold">{{translate('home', 'section4', 'subLabel')}}</p>
@@ -145,7 +145,7 @@
             </div>
         </section>
 
-        <section class="main-section bg-section" id="offer">
+        <section class="scroll-point main-section bg-section" id="offer">
             <div class="custom-container">
                 <h3 class="section-title">{{translate('home', 'section5', 'label')}}</h3>
                 <p class="description bold">{{translate('home', 'section5', 'subLabel')}}</p>
@@ -173,7 +173,7 @@
             </div>
         </section>
         
-        <section class="main-section shape-toleft" id="partnership">
+        <section class="scroll-point main-section shape-toleft" id="partnership">
             <div class="custom-container">
                 <h3 class="section-title">{{translate('home', 'section6', 'label')}}</h3>
                 <p class="description bold">{{translate('home', 'section6', 'subLabel1')}}</p>
@@ -204,13 +204,7 @@
 
         <!-- About -->
 
-        <!-- <section class="section-1">
-            <div class="intro">
-                <h1>{{translate('about', 'section1', 'label')}}</h1>
-            </div>
-        </section> -->
-
-        <section class="main-section bg-section" id="about">
+        <section class="scroll-point main-section bg-section" id="about">
             <div class="custom-container">
                 <h3 class="section-title centered">{{translate('about', 'section2', 'label')}}</h3>
 
@@ -301,7 +295,7 @@
 
         <!-- Contact -->
 
-        <div class="map-wrapp" id="contact">
+        <div class="scroll-point map-wrapp" id="contact">
             <LMap :zoom="zoom" :center="center" :options="options" class="map">
                 <LTileLayer :url="url" :attribution="attribution"/>
                 <LMarker :lat-lng="center" :icon="icon"></LMarker>
