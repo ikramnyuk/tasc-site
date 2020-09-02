@@ -2,8 +2,9 @@ const fr = {
     home: {
         section1: {
             label: "End-to-end services in the tendering process",
-            intro: "TASC a été fondée en 2004 par des spécialistes des institutions publiques et gestionnaires de projets institutionnels. Les bureaux de TASC sont situés à quelques minutes des Institutions européennes.",
-            subIntro: "TASC fournit ses services à travers toute l’Europe"
+            intro: "Tender-services a été fondée en 2004 par des spécialistes des institutions publiques et gestionnaires de projets institutionnels. Les bureaux de Tender-services sont situés à quelques minutes des Institutions européennes.",
+            subIntro: "Tender-services fournit ses services à travers toute l’Europe",
+            powered: "alimenté par"
         },
 
         section2: {
@@ -35,12 +36,12 @@ const fr = {
             list1_6: "Pour être informé par mail des nouveaux appels d'offres et des délais",
             list2Label: "Nous assurons la veille en Belgique, France et Luxembourg ",
             list2Sublabel: "est une plateforme de veille internationale sur les marchés publics",
-            list2Sublabel2part1: "TASC est le partenaire exclusif de Tender-it ",
+            list2Sublabel2part1: "Tender-services est le partenaire exclusif de Tender-it ",
             list2Sublabel2part2: "pour le Belgique, la France et le Luxembourg",
             list2_1: "Nous identifions avec nos clients les éléments-clés de leur veille",
             list2_2: "Nous trouvons pour nos clients les marchés publics qui leur correspondent",
             list2_3: "Nous élargissons signicativement l’horizon des marchés de nos clients",
-            link2: "Entrez dans notre service de veille et obtenez un essai gratuit. Actuellement en anglais, disponible prochainement en français"
+            link2: "Entrez dans notre service de veille et obtenez un essai gratuit"
         },
 
         section4: {
@@ -82,7 +83,7 @@ const fr = {
             label: "Qui sommes-nous?"
         },
         section2: {
-            label: "Les valeurs de TASC",
+            label: "Les valeurs de Tender-services",
             case1: "Confidentialité",
             case2: "Intégrité ",
             case3: "Attention ",
@@ -91,7 +92,7 @@ const fr = {
             case5Sub: "de nos offres",
         },
         section3: {
-            label: "La stratégie de TASC",
+            label: "La stratégie de Tender-services",
             case1: "Nous évaluons le potentiel de votre entité pour accéder aux marchés institutionnels",
             case2: "Nous analysons votre environnement concurrentiel sur les marchés publics",
             case3: "Nous vérifions l'ouverture réelle du marché à votre entité",
@@ -101,11 +102,11 @@ const fr = {
         },
         section4: {
             label: "Ils nous font confiance",
-            case1: "“Depuis quelques années, TASC nous aide à progresser vers une meilleure compréhension des marchés européens. Ils nous ont permis de gagner en efficacité dans l'analyse des appels d'offres et d'évoluer vers la sélection des appels sur lesquels monter une offre.”",
-            case2: "“TASC a établi un ensemble complet de matériel de méthodologie d'entreprise qui accompagne chaque offre. Leurs connaissances et leur réseau nous ont permis de bénéficier des partenariats les plus adéquats répondant aux critères de sélection définis dans le cahier des charges.”",
-            case3: "“TASC a toujours été fiable et professionnel. Notre confiance dans Euro TASC Consulting est immense et nous recommandons fortement leurs services.”",
-            case4: "“TASC a une excellente compréhension du type de partenaires de consortium nécessaires pour remporter un appel d'offres et des passerelles entre les nouveaux partenaires. Grâce à leurs excellentes compétences en communication et en organisation, ils assurent un suivi étroit, fluide et professionnel de l'ensemble du processus d'appel d'offres jusqu'à la livraison.”",
-            case5: "“Avec TASC, nous avons fait le pari de nous tourner vers une équipe plus expérimentée pour préparer les offres et conseiller les soumissionnaires. TASC a parfaitement compris nos besoins. Ils sont devenus des partenaires plus dévoués que des consultants. L'enrichissement était idéal, connaissance approfondie de l'environnement des soumissionnaires, ancienneté, capacité à s'adapter à nos spécificités. Bref, un accompagnement sur mesure, à l'opposé du prêt-à-porter habituel des grands cabinets de conseil.”",
+            case1: "“Depuis quelques années, Tender-services nous aide à progresser vers une meilleure compréhension des marchés européens. Ils nous ont permis de gagner en efficacité dans l'analyse des appels d'offres et d'évoluer vers la sélection des appels sur lesquels monter une offre.”",
+            case2: "Tender-services a établi un ensemble complet de matériel de méthodologie d'entreprise qui accompagne chaque offre. Leurs connaissances et leur réseau nous ont permis de bénéficier des partenariats les plus adéquats répondant aux critères de sélection définis dans le cahier des charges.”",
+            case3: "Tender-services a toujours été fiable et professionnel. Notre confiance dans Euro Tender-services Consulting est immense et nous recommandons fortement leurs services.”",
+            case4: "Tender-services a une excellente compréhension du type de partenaires de consortium nécessaires pour remporter un appel d'offres et des passerelles entre les nouveaux partenaires. Grâce à leurs excellentes compétences en communication et en organisation, ils assurent un suivi étroit, fluide et professionnel de l'ensemble du processus d'appel d'offres jusqu'à la livraison.”",
+            case5: "“Avec Tender-services, nous avons fait le pari de nous tourner vers une équipe plus expérimentée pour préparer les offres et conseiller les soumissionnaires. Tender-services a parfaitement compris nos besoins. Ils sont devenus des partenaires plus dévoués que des consultants. L'enrichissement était idéal, connaissance approfondie de l'environnement des soumissionnaires, ancienneté, capacité à s'adapter à nos spécificités. Bref, un accompagnement sur mesure, à l'opposé du prêt-à-porter habituel des grands cabinets de conseil.”",
             case1Sub: "Michel Culot, CEO de VO Group",
             case2Sub: "Bruno Théry, Administrateur de Conceptexpo Group",
             case3Sub: "Jacques Van Leemput, Directeur général d’IGEP",
@@ -126,10 +127,12 @@ const fr = {
             contactSubLabel: "ou bien n’hésitez pas à compléter le formulaire dans l’onglet 'Contact'",
             addressLabel: "Siège social",
             addresssublabel: "Euro TASC Consulting sprl/bvba",
-            adress1: "103 Boulevard Louis Schmidtlaan",
+            addresssublabel2: "Ou Tender Services",
+            adress1: "103, Boulevard Louis Schmidtlaan",
             adress2: "1040 Brussels – Belgium",
             adress3: "info@eurotasc.com",
-            adress4: "N° entr BE 0865 451 816 ",
+            adress31: "info@tender-services.eu",
+            adress4: "N° entr BE 0865 451 816",
             topics: ["Veille", "Eligibilité", "Montage d’offre", "Partenariats", "Autre question"]
         }
     },

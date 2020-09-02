@@ -31,7 +31,28 @@
             
             .logo{
                 width: auto;
-                height: 200px;
+                height: 175px;
+            }
+            
+            .logo-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                
+                @media(max-width: 600px){
+                    flex-direction: column;
+                    margin-bottom: 0;
+                }
+
+                span{
+                    min-width: 85px;
+                    margin: 0 20px;
+
+                    @media(max-width: 600px){
+                        margin: 20px 0;
+                    }
+                }
             }
 
             h1{

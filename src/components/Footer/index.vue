@@ -12,7 +12,7 @@
             <footer class="main-footer">
                 <div class="logo-col">
                     <a href="#" class="logo">
-                        <img src="@/assets/img/logo.png" alt="logo">
+                        <img src="@/assets/img/small-logo.png" alt="logo">
                     </a>
                 </div>
                 
@@ -50,11 +50,13 @@
                     </div>
                     <div class="custom-col">
                         <h3 class="solid-text fz16">{{translate('contact', 'section1', 'addresssublabel')}}</h3>
+                        <h3 class="solid-text fz16">{{translate('contact', 'section1', 'addresssublabel2')}}</h3>
 
                         <ul>
                             <li>{{translate('contact', 'section1', 'adress1')}}</li>
                             <li>{{translate('contact', 'section1', 'adress2')}}</li>
                             <li><a href="mailto:info@eurotasc.com">{{translate('contact', 'section1', 'adress3')}}</a></li>
+                            <li><a href="mailto:info@eurotasc.com">{{translate('contact', 'section1', 'adress31')}}</a></li>
                             <li>{{translate('contact', 'section1', 'adress4')}}</li>
                         </ul>
                     </div>

@@ -4,7 +4,7 @@
             <header class="main-header container">
                 <nav class="main-menu">
                    <a href="#intro" class="logo" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}">
-                        <img src="@/assets/img/logo.png" alt="logo">
+                        <img src="@/assets/img/small-logo.png" alt="logo">
                     </a>
                     <a href="#monitoring" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link1')}}</a>
                     <a href="#eligibility" v-smooth-scroll="{ duration: 500, offset: -70, updateHistory: false}" class="d-none d-md-inline d-lg-inline">{{translate('common', 'headerAndFooter', 'link2')}}</a>

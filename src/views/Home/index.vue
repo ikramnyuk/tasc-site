@@ -2,7 +2,11 @@
     <main class="main-wrapper" id="top-point">
         <section class="scroll-point section-1" id="intro">
             <div class="intro intro-mb">
-                <img class="logo" src="@/assets/img/logo.png" alt="logo">
+                <div class="logo-container">
+                    <img class="logo" src="@/assets/img/new-tender-it-logo.png" alt="logo">
+                    <span>{{translate('home', 'section1', 'powered')}}</span>
+                    <img class="logo" src="@/assets/img/logo.png" alt="logo">
+                </div>
 
                 <h1>{{translate('home', 'section1', 'label')}}</h1>
                 <h2>{{translate('home', 'section1', 'intro')}} <br/> {{translate('home', 'section1', 'subIntro')}}</h2>
@@ -332,10 +336,12 @@
                                 {{translate('contact', 'section1', 'addressLabel')}}
                             </div>
                             <div class="label">{{translate('contact', 'section1', 'addresssublabel')}}</div>
+                            <div class="label">{{translate('contact', 'section1', 'addresssublabel2')}}</div>
                             <div class="contac-info">
                                 {{translate('contact', 'section1', 'adress1')}} <br/>
                                 {{translate('contact', 'section1', 'adress2')}} <br/>
-                                {{translate('contact', 'section1', 'adress3')}} <br/>
+                                <a :href="'mailto:' + translate('contact', 'section1', 'adress3')">{{translate('contact', 'section1', 'adress3')}}</a> <br/>
+                                <a :href="'mailto:' + translate('contact', 'section1', 'adress31')">{{translate('contact', 'section1', 'adress31')}}</a> <br/>
                                 {{translate('contact', 'section1', 'adress4')}}
                             </div>
                         </div>
@@ -373,6 +379,7 @@
         
         watch: { 
             lang: function(newVal) {
+
                 this.currentLang = newVal;
                 console.log(newVal + ' home');
             }
