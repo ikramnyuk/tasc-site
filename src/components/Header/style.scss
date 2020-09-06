@@ -52,10 +52,18 @@
 
 	.logo{
 		display: inline-block;
+		position: relative;
+		left: -50px;
 
 		img{
+			position: relative;
+			top: 4px;
 			width: auto;
 			height: 40px;
+		}
+
+		@media(max-width: 960px){
+			left: 0;
 		}
 	}
 

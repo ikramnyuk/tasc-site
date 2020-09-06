@@ -1,9 +1,9 @@
 const eng = {
     home: {
         section1: {
-            label: "End-to-end services in the tendering process",
-            intro: "Tender-services is a company founded in 2004 by experts dealing with public institutions and managing institutional projects. Tender-services office is just a few minutes from the european institutions.",
-            subIntro: "Tender-services delivers its services throughout all of Europe",
+            label: "",
+            intro: "Founded in 2004 under the Euro TASC Consulting brand, Tender Services brings together specialists in public institutions and institutional project managers. Thanks to its Brussels head office close to the European Institutions, Tender Services delivers its services throughout the whole Europe.",
+            subIntro: "Tender Services delivers its services throughout all of Europe",
             powered: "powered by"
         },
 
@@ -36,7 +36,7 @@ const eng = {
             list1_6: "To get notified by mail on new tenders and deadlines",
             list2Label: "is an International public procurement platform.",
             list2Sublabel: "is an international public procurement platform",
-            list2Sublabel2part1: "Tender-services is Tender-it ",
+            list2Sublabel2part1: "Tender Services is Tender-it ",
             list2Sublabel2part2: "exclusive partner for entities in Belgium, France and Luxembourg",
             list2_1: "Supporting and help Belgian, French and Luxembourger customers",
             list2_2: "Building their search profile",
@@ -47,7 +47,7 @@ const eng = {
         section4: {
             label: "Eligibility",
             subLabel: "We advise on your feasibility and your opportunity to answer the tender",
-            listLabel: "Tender-services actions include",
+            listLabel: "Tender Services actions include",
             list_1: "Reading the complete call for tenders documents",
             list_2: "Selecting the key information",
             list_3: "Analysing the selection criteria against your company profile and capacity",
@@ -57,7 +57,7 @@ const eng = {
         section5: {
             label: "Offer building",
             subLabel: "From the thorough analysis of the tender documents until the submission of your offer.",
-            listLabel: "Tender-services actions include",
+            listLabel: "Tender Services actions include",
             list_1: "Analysing calls for tender and identifying required skills and documents",
             list_2: "Structuring tender’s offer and setting up bid planning",
             list_3: "Setting up and negotiating agreements with all types of partners",
@@ -71,7 +71,7 @@ const eng = {
             label: "Partnerships",
             subLabel1: "You may need complementary resources for specific tenders.",
             subLabel2: "We act as both an architect enabling partnerships to come together, and as an independent referee defining the rights, obligations, responsibilities and accountability of each partner.",
-            listLabel: "Tender-services actions include",
+            listLabel: "Tender Services actions include",
             list_1: "Identifying the right partner(s) for a perfect consortium",
             list_2: "Building network of similar (or not) entities to cover larger territory",
             list_3: "Defining roles and responsibilities of all parties involved.",
@@ -80,10 +80,10 @@ const eng = {
     },
     about: {
         section1: {
-            label: "About Tender-services"
+            label: "About Tender Services"
         },
         section2: {
-            label: "Tender-services values",
+            label: "Tender Services values",
             case1: "Confidentiality",
             case2: "Integrity",
             case3: "Attentiveness",
@@ -92,7 +92,7 @@ const eng = {
             case5Sub: "soundness of tender",
         },
         section3: {
-            label: "Tender-services Strategy",
+            label: "Tender Services Strategy",
             case1: "We assess your entity potential to access the institutional market",
             case2: "We assess your competitive environment in public procurements",
             case3: "We check the real market-opening to your entity",
@@ -102,11 +102,11 @@ const eng = {
         },
         section4: {
             label: "They trust us",
-            case1: "“For some years now, Tender-services has helped us progress toward a better understanding of European markets. They allowed us to gain efficiency in the analysis of the calls for tenders and to evolve into selecting calls we have won.”",
-            case2: "Tender-services has established a full set of company methodology material that accompanies each offer. Their knowledge and network have allowed us to benefit from the most adequate partnerships meeting the selection criteria outlined in the call for tender specifications.”",
-            case3: "Tender-services has always been reliable and professional. Our trust in Euro Tender-services Consulting is immense and we highly recommend their services.”",
-            case4: "Tender-services has an outstanding understanding of the type of consortium partners needed in order to win a tender and bridges between new Partners. Due to their excellent communication and organizational skills, they ensures a close, smooth and professional follow up of the whole tendering process until the delivery.”",
-            case5: "“With Tender-services, we made the bet to turn to a more experienced team to prepare the offers and advise the bidders. Tender-services fully understood our needs. They have become more dedicated partners than consultants. The enrichment was ideal, in-depth knowledge of the environment of the bidders, seniority, ability to adapt to our specificities. In short, tailor-made support, just the opposite of the usual ready-to-wear from large consulting firms.”",
+            case1: "“For some years now, Tender Services has helped us progress toward a better understanding of European markets. They allowed us to gain efficiency in the analysis of the calls for tenders and to evolve into selecting calls we have won.”",
+            case2: "Tender Services has established a full set of company methodology material that accompanies each offer. Their knowledge and network have allowed us to benefit from the most adequate partnerships meeting the selection criteria outlined in the call for tender specifications.”",
+            case3: "Tender Services has always been reliable and professional. Our trust in Tender Services is immense and we highly recommend their services.”",
+            case4: "Tender Services has an outstanding understanding of the type of consortium partners needed in order to win a tender and bridges between new Partners. Due to their excellent communication and organizational skills, they ensures a close, smooth and professional follow up of the whole tendering process until the delivery.”",
+            case5: "“With Tender Services, we made the bet to turn to a more experienced team to prepare the offers and advise the bidders. Tender Services fully understood our needs. They have become more dedicated partners than consultants. The enrichment was ideal, in-depth knowledge of the environment of the bidders, seniority, ability to adapt to our specificities. In short, tailor-made support, just the opposite of the usual ready-to-wear from large consulting firms.”",
             case1Sub: "Michel Culot, CEO of VO Group",
             case2Sub: "Bruno Théry, President of Conceptexpo Group",
             case3Sub: "Jacques Van Leemput, Director of IGEP",
@@ -126,8 +126,8 @@ const eng = {
             contactLabel: "Call us now at",
             contactSubLabel: "or fill in the form and we will contact you immediately.",
             addressLabel: "Head Office",
-            addresssublabel: "Euro TASC Consulting sprl/bvba",
-            addresssublabel2: "Or Tender Services",
+            addresssublabel: "Tender Services",
+            addresssublabel2: "and Euro TASC Consulting sprl/bvba",
             adress1: "103, Boulevard Louis Schmidtlaan",
             adress2: "1040 Brussels – Belgium",
             adress3: "info@eurotasc.com",

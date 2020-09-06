@@ -5,7 +5,7 @@
                 <div class="logo-container">
                     <img class="logo" src="@/assets/img/new-tender-it-logo.png" alt="logo">
                     <span>{{translate('home', 'section1', 'powered')}}</span>
-                    <img class="logo" src="@/assets/img/logo.png" alt="logo">
+                    <img class="logo intro-logo-2" src="@/assets/img/logo.png" alt="logo">
                 </div>
 
                 <h1>{{translate('home', 'section1', 'label')}}</h1>
@@ -340,7 +340,6 @@
                             <div class="contac-info">
                                 {{translate('contact', 'section1', 'adress1')}} <br/>
                                 {{translate('contact', 'section1', 'adress2')}} <br/>
-                                <a :href="'mailto:' + translate('contact', 'section1', 'adress3')">{{translate('contact', 'section1', 'adress3')}}</a> <br/>
                                 <a :href="'mailto:' + translate('contact', 'section1', 'adress31')">{{translate('contact', 'section1', 'adress31')}}</a> <br/>
                                 {{translate('contact', 'section1', 'adress4')}}
                             </div>
@@ -360,7 +359,7 @@
     import { latLng, icon } from "leaflet";
     import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
     import 'leaflet/dist/leaflet.css';
-    import iconUrl from "../../assets/img/logo-marker.svg";
+    import iconUrl from "../../assets/img/small-logo.png";
 
     import { sendEmail } from "../../api/common";
 

@@ -12,7 +12,7 @@
             <footer class="main-footer">
                 <div class="logo-col">
                     <a href="#" class="logo">
-                        <img src="@/assets/img/small-logo.png" alt="logo">
+                        <img src="@/assets/img/new-tender-it-logo.png" alt="logo">
                     </a>
                 </div>
                 
