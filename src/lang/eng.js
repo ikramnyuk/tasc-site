@@ -2,7 +2,7 @@ const eng = {
     home: {
         section1: {
             label: "",
-            intro: "Founded in 2004 under the Euro TASC Consulting brand, Tender Services brings together specialists in public institutions and institutional project managers. Thanks to its Brussels head office close to the European Institutions, Tender Services delivers its services throughout the whole Europe.",
+            intro: "Founded in 2004 under the Euro TASC Consulting brand, Tender Services brings together specialists in public institutions and institutional project managers. Thanks to its Brussels head office close to the European Institutions, Tender Services delivers its services throughout the whole of Europe.",
             subIntro: "Tender Services delivers its services throughout all of Europe",
             powered: "powered by"
         },
@@ -103,7 +103,7 @@ const eng = {
         section4: {
             label: "They trust us",
             case1: "“For some years now, Tender Services has helped us progress toward a better understanding of European markets. They allowed us to gain efficiency in the analysis of the calls for tenders and to evolve into selecting calls we have won.”",
-            case2: "Tender Services has established a full set of company methodology material that accompanies each offer. Their knowledge and network have allowed us to benefit from the most adequate partnerships meeting the selection criteria outlined in the call for tender specifications.”",
+            case2: "Tender Services has established a full set of company methodologies material that accompanies each offer. Their knowledge and network have allowed us to benefit from the most adequate partnerships meeting the selection criteria outlined in the call for tender specifications.”",
             case3: "Tender Services has always been reliable and professional. Our trust in Tender Services is immense and we highly recommend their services.”",
             case4: "Tender Services has an outstanding understanding of the type of consortium partners needed in order to win a tender and bridges between new Partners. Due to their excellent communication and organizational skills, they ensures a close, smooth and professional follow up of the whole tendering process until the delivery.”",
             case5: "“With Tender Services, we made the bet to turn to a more experienced team to prepare the offers and advise the bidders. Tender Services fully understood our needs. They have become more dedicated partners than consultants. The enrichment was ideal, in-depth knowledge of the environment of the bidders, seniority, ability to adapt to our specificities. In short, tailor-made support, just the opposite of the usual ready-to-wear from large consulting firms.”",

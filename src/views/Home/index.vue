@@ -9,7 +9,9 @@
                 </div>
 
                 <h1>{{translate('home', 'section1', 'label')}}</h1>
-                <h2>{{translate('home', 'section1', 'intro')}} <br/> {{translate('home', 'section1', 'subIntro')}}</h2>
+                <h2>{{translate('home', 'section1', 'intro')}} 
+                <!-- <br/> {{translate('home', 'section1', 'subIntro')}} -->
+                </h2>
             </div>
         </section>
 

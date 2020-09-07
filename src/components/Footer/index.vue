@@ -55,7 +55,6 @@
                         <ul>
                             <li>{{translate('contact', 'section1', 'adress1')}}</li>
                             <li>{{translate('contact', 'section1', 'adress2')}}</li>
-                            <li><a href="mailto:info@eurotasc.com">{{translate('contact', 'section1', 'adress3')}}</a></li>
                             <li><a href="mailto:info@eurotasc.com">{{translate('contact', 'section1', 'adress31')}}</a></li>
                             <li>{{translate('contact', 'section1', 'adress4')}}</li>
                         </ul>

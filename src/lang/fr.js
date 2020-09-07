@@ -4,7 +4,7 @@ const fr = {
             label: "End-to-end services in the tendering process",
             intro: "Fondée en 2004 sous l’enseigne Euro TASC Consulting, Tender Services regroupe des spécialistes des institutions publiques et des gestionnaires de projets institutionnels. Grâce à son siège bruxellois proche des Institutions Européennes, Tender Services délivre ses services à travers toute l’Europe.",
             subIntro: "Tender Services fournit ses services à travers toute l’Europe",
-            powered: "alimenté par"
+            powered: "powered by"
         },
 
         section2: {
@@ -103,7 +103,7 @@ const fr = {
         section4: {
             label: "Ils nous font confiance",
             case1: "“Depuis quelques années, Tender Services nous aide à progresser vers une meilleure compréhension des marchés européens. Ils nous ont permis de gagner en efficacité dans l'analyse des appels d'offres et d'évoluer vers la sélection des appels sur lesquels monter une offre.”",
-            case2: "Tender Services a établi un ensemble complet de matériel de méthodologie d'entreprise qui accompagne chaque offre. Leurs connaissances et leur réseau nous ont permis de bénéficier des partenariats les plus adéquats répondant aux critères de sélection définis dans le cahier des charges.”",
+            case2: "Tender Services a établi un ensemble complet de méthodologies d'entreprise qui accompagne chaque offre. Leurs connaissances et leur réseau nous ont permis de bénéficier des partenariats les plus adéquats répondant aux critères de sélection définis dans le cahier des charges.”",
             case3: "Tender Services a toujours été fiable et professionnel. Notre confiance dans Tender Services est immense et nous recommandons fortement leurs services.”",
             case4: "Tender Services a une excellente compréhension du type de partenaires de consortium nécessaires pour remporter un appel d'offres et des passerelles entre les nouveaux partenaires. Grâce à leurs excellentes compétences en communication et en organisation, ils assurent un suivi étroit, fluide et professionnel de l'ensemble du processus d'appel d'offres jusqu'à la livraison.”",
             case5: "“Avec Tender Services, nous avons fait le pari de nous tourner vers une équipe plus expérimentée pour préparer les offres et conseiller les soumissionnaires. Tender Services a parfaitement compris nos besoins. Ils sont devenus des partenaires plus dévoués que des consultants. L'enrichissement était idéal, connaissance approfondie de l'environnement des soumissionnaires, ancienneté, capacité à s'adapter à nos spécificités. Bref, un accompagnement sur mesure, à l'opposé du prêt-à-porter habituel des grands cabinets de conseil.”",
