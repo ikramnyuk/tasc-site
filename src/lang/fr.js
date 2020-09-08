@@ -1,7 +1,7 @@
 const fr = {
     home: {
         section1: {
-            label: "End-to-end services in the tendering process",
+            label: "",
             intro: "Fondée en 2004 sous l’enseigne Euro TASC Consulting, Tender Services regroupe des spécialistes des institutions publiques et des gestionnaires de projets institutionnels. Grâce à son siège bruxellois proche des Institutions Européennes, Tender Services délivre ses services à travers toute l’Europe.",
             subIntro: "Tender Services fournit ses services à travers toute l’Europe",
             powered: "powered by"
